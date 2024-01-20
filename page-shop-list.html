@@ -38,13 +38,7 @@
       type="image/x-icon"
     />
 
-    <style>
-      @media only screen and (max-width: 800px) {
-        header {
-          position: fixed;
-        }
-      }
-    </style>
+   
   </head>
 <body data-spy="scroll">
 <div class="wrapper ovh">
@@ -56,7 +50,7 @@
       <div class="row">
         <div class="col-lg-2 col-xxl-2">
           <div class="header_top_logo_home1">
-            <div class="logo">Zeomart<span class="text-thm">.</span></div>
+            <div class="logo">CheriX<span class="text-thm">.</span></div>
           </div>
         </div>
         <div class="col-lg-5 col-xxl-6">
@@ -133,7 +127,7 @@
   </div>
   
   <!-- Main Header Nav -->
-  <header class="header-nav menu_style_home_one main-menu" style="position: fixed; z-index: 999;">
+  <header class="header-nav menu_style_home_one main-menu" >
     <!-- Ace Responsive Menu -->
     <nav class="posr"> 
       <div class="container posr menu_bdrt1" style="opacity: 1;"> 
@@ -145,31 +139,17 @@
             <span class="icon-bar"></span>
           </button>
         </div>
-        <div class="posr logo1 home1_style" style="opacity: 0;">
-         
-        </div>
-        <!-- Responsive Menu Structure-->
-        <ul id="respMenu" class="ace-responsive-menu menu_list_custom_code wa pl200" data-menu-style="horizontal" style="opacity: 0;">
-          <li> <a href="#"><span class="title">Home</span></a>
-          </li>
-          <li> <a href="#"><span class="title">Shop</span></a>
-          </li>
-          <li><a href="#"><span class="title">Pages</span></a>
-          </li>
-          
-        <ul id="respMenu2" class="ace-responsive-menu widget_menu_home2 wa" data-menu-style="horizontal">
-          <li class="list-inline-item list_c"><a href="#">Our Distributors</a></li>
-        </ul>
-      </div>
+       
     </nav>
   </header>
 
   <!-- Body Ovelay Behind Sidebar -->
   <div class="hiddenbar-body-ovelay"></div>
-  <!-- Sign In Hiddn SideBar -->
   <div class="signin-hidden-sbar">
     <div class="hsidebar-header">
-      <div class="sidebar-close-icon"><span class="flaticon-close"></span></div>
+      <div class="sidebar-close-icon">
+        <span class="flaticon-close"></span>
+      </div>
       <h4 class="title">Sign-In</h4>
     </div>
     <div class="hsidebar-content">
@@ -177,30 +157,44 @@
         <div class="login_form">
           <form action="#">
             <div class="mb-2 mr-sm-2">
-              <label class="form-label">Username or email address</label>
-              <input type="text" class="form-control" placeholder="Ali Tufan">
+              <label class="form-label">Email address: </label
+              ><input
+              name="email"
+                type="text"
+                class="form-control"
+                placeholder="Enter Email...."
+                required
+              />
             </div>
             <div class="form-group mb5">
-              <label class="form-label">Password</label>
-              <input type="password" class="form-control" placeholder="Password">
+              <label class="form-label">Password</label
+              ><input
+              name="password"
+                type="password"
+                class="form-control"
+                placeholder="Enter Password..."
+                required
+              />
             </div>
             <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="exampleCheck3">
-              <label class="custom-control-label" for="exampleCheck3">Remember me</label>
-              <a class="btn-fpswd float-end" href="#">Lost your password?</a>
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="exampleCheck3"
+              /><label class="custom-control-label" for="exampleCheck3"
+                >Remember me</label
+              ><a class="btn-fpswd float-end" href="#"
+                >Forgot password?</a
+              >
             </div>
-            <button type="submit" class="btn btn-log btn-thm mt20">Login</button>
-            <p class="text-center mb25 mt10">Don't have an account? <a class="signup-filter-btn" href="#">Create account</a></p>
-            <div class="hr_content">
-              <hr>
-              <span class="hr_top_text">or</span>
-            </div>
-            <ul class="login_with_social text-center mt30 mb0">
-              <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
-              <li class="list-inline-item"><a href="#"><i class="fab fa-google"></i></a></li>
-              <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-              <li class="list-inline-item"><a href="#"><i class="fab fa-apple"></i></a></li>
-            </ul>
+            <button type="submit" class="btn btn-log btn-thm mt20">
+              Login
+            </button>
+            <p class="text-center mb25 mt10">
+              Don't have an account?<a class="signup-filter-btn" href="#"
+                >Create account</a
+              >
+            </p>
           </form>
         </div>
       </div>
@@ -210,7 +204,9 @@
   <!-- Your Cart Hiddn SideBar -->
   <div class="cart-hidden-sbar">
     <div class="hsidebar-header">
-      <div class="sidebar-close-icon"><span class="flaticon-close"></span></div>
+      <div class="sidebar-close-icon">
+        <span class="flaticon-close"></span>
+      </div>
       <h4 class="title">Your Cart</h4>
     </div>
     <div class="hsidebar-content">
@@ -221,39 +217,38 @@
               <ul class="dropdown_content">
                 <li class="list_content">
                   <div>
-                    <img class="float-start mt10" src="images/shop/s1.png" alt="75x75">
-                    <p>Apple MacBook Pro with Apple M1 Chip</p>
+                    <img
+                      class="float-start mt10"
+                      src=""
+                      alt="wiper image"
+                    />
+                    <p>120pcs Baby Wiper </p>
                     <div class="cart_btn home_page_sidebar mt10">
                       <div class="quantity-block home_page_sidebar">
-                        <button class="quantity-arrow-minus home_page_sidebar"><img src="images/icons/minus.svg" alt=""></button>
-                        <input class="quantity-num home_page_sidebar" type="number" value="3">
-                        <button class="quantity-arrow-plus home_page_sidebar"> <span class="flaticon-close"></span> </button>
+                        <button
+                          class="quantity-arrow-minus home_page_sidebar"
+                        >
+                          <img
+                            src="images/icons/minus.svg"
+                            alt=""
+                          /></button
+                        ><input
+                          class="quantity-num home_page_sidebar"
+                          type="number"
+                          value="3"
+                        /><button
+                          class="quantity-arrow-plus home_page_sidebar"
+                        >
+                          <span class="flaticon-close"></span>
+                        </button>
                       </div>
-                      <span class="home_page_sidebar price">$3.399</span>
+                      <span class="home_page_sidebar price">#300.399</span>
                     </div>
-                    <span class="close_icon"><i class="flaticon-close"></i></span>
+                    <span class="close_icon"
+                      ><i class="flaticon-close"></i
+                    ></span>
                   </div>
                 </li>
-                <li class="list_content">
-                  <div>
-                    <img class="float-start mt10" src="images/shop/s2.png" alt="75x75">
-                    <p>Apple MacBook Pro with Apple M1 Chip</p>
-                    <div class="cart_btn home_page_sidebar mt10">
-                      <div class="quantity-block home_page_sidebar">
-                        <button class="quantity-arrow-minus2 home_page_sidebar"><img src="images/icons/minus.svg" alt=""></button>
-                        <input class="quantity-num2 home_page_sidebar" type="number" value="3">
-                        <button class="quantity-arrow-plus2 home_page_sidebar"> <span class="flaticon-close"></span> </button>
-                      </div>
-                      <span class="home_page_sidebar price">$3.399</span>
-                    </div>
-                    <span class="close_icon"><i class="flaticon-close"></i></span>
-                  </div>
-                </li>
-                <li class="list_content_total_price">
-                  <h5>Total: <span class="total_price float-end">$6.225.98</span></h5>
-                </li>
-              </ul>
-            </li>
           </ul>
         </div>
       </div>
@@ -261,14 +256,8 @@
     <div class="hsidebar_footer_content">
       <div class="list_last_content">
         <div class="lc">
-          <p class="para">Buy $98.00 more to enjoy FREE Shipping</p>
-          <div class="uilayout_range home1_style">
-            <div class="sidebar_range_slider mb30 mt25">
-              <input class="range-example-km" value="80" type="text">
-            </div>
-          </div>
-          <a href="#" class="cart_btns btn btn-white">View Cart</a>
-          <a href="#" class="checkout_btns btn btn-thm">Checkout</a>
+          <a href="#" class="cart_btns btn btn-white">View Cart</a
+          ><a href="#" class="checkout_btns btn btn-thm">Checkout</a>
         </div>
       </div>
     </div>
@@ -327,6 +316,7 @@
       </div>
     </div>
   </div>
+  
   <!--End Sign Up Hiddn SideBar -->
   <!-- Your Menu Hiddn SideBar -->
 
@@ -361,56 +351,6 @@
                     <form action="#" method="get" class="form-search" accept-charset="utf-8">
                       <div class="box-search">
                         <input class="form_control" type="text" name="search" placeholder="Search products…">
-                        <div class="search-suggestions text-start">
-                          <div class="box-suggestions">
-                            <ul>
-                              <li>
-                                <div class="thumb">
-                                  <img src="images/listing/sf1.png" alt="sf1.png">
-                                </div>
-                                <div class="info-product">
-                                  <div class="item_title">Sony DJ Headphones 4334205465, Black, Standard</div>
-                                  <div class="price"><span class="sale">$32.50</span></div>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="thumb">
-                                  <img src="images/listing/sf2.png" alt="sf2.png">
-                                </div>
-                                <div class="info-product">
-                                  <div class="item_title">Sony E-Mount Full Frame FE 24-70mm f/2.8 GM II G Master</div>
-                                  <div class="price"><span class="sale">$32.50</span></div>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="thumb">
-                                  <img src="images/listing/sf3.png" alt="sf3.png">
-                                </div>
-                                <div class="info-product">
-                                  <div class="item_title">TV 55" 4-Series 4K UHD smart TV</div>
-                                  <div class="price"><span class="sale">$32.50</span></div>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="thumb">
-                                  <img src="images/listing/sf4.png" alt="sf4.png">
-                                </div>
-                                <div class="info-product">
-                                  <div class="item_title">Hugolog Baby Monitor, 2K Security Camera, PT Cameras for</div>
-                                  <div class="price"><span class="sale">$32.50</span></div>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="thumb">
-                                  <img src="images/listing/sf5.png" alt="sf5.png">
-                                </div>
-                                <div class="info-product">
-                                  <div class="item_title">Apple iPhone Retina 6s Plus 64GB</div>
-                                  <div class="price"><span class="sale">$32.50</span></div>
-                                </div>
-                              </li>
-                            </ul>
-                          </div><!-- /.box-suggestions -->
                         </div>
                       </div>
                     </form>
@@ -431,652 +371,22 @@
     <!-- /.mobile-menu -->
     <nav id="menu" class="stylehome1">
       <ul>
-        <li><span>Home</span>
-          <ul>
-            <li><a href="index1.html">Home V1</a></li>
-            <li><a href="index2.html">Home V2</a></li>
-            <li><a href="index3.html">Home V3</a></li>
-            <li><a href="index4.html">Home V4</a></li>
-            <li><a href="index5.html">Home V5</a></li>
-            <li><a href="index6.html">Home V6</a></li>
-            <li><a href="index7.html">Home V7</a></li>
-            <li><a href="index8.html">Home V8</a></li>
-            <li><a href="index9.html">Home V9</a></li>
-            <li><a href="index10.html">Home V10</a></li>
-          </ul>
-        </li>
-        <li><span>Shop</span>
-          <ul>
-            <li><span>Shop Listing</span>
-              <ul>
-                <li><a href="page-shop-list-v1.html">Listing v1</a></li>
-                <li><a href="page-shop-list-v2.html">Listing v2</a></li>
-                <li><a href="page-shop-list-v3.html">Listing v3</a></li>
-                <li><a href="page-shop-list-v4.html">Listing v4</a></li>
-                <li><a href="page-shop-list-v5.html">Listing v5</a></li>
-                <li><a href="page-shop-list-v6.html">Listing v6</a></li>
-                <li><a href="page-shop-list-v7.html">Listing v7</a></li>
-                <li><a href="page-shop-list-v8.html">Listing v8</a></li>
-              </ul>
-            </li>
-            <li><span>Shop Single</span>
-              <ul>
-                <li><a href="page-shop-single-v1.html">Version 1</a></li>
-                <li><a href="page-shop-single-v2.html">Version 2</a></li>
-                <li><a href="page-shop-single-v3.html">Version 3</a></li>
-                <li><a href="page-shop-single-v4.html">Version 4</a></li>
-                <li><a href="page-shop-single-v5.html">Version 5</a></li>
-                <li><a href="page-shop-single-color-switch.html">Color Switch</a></li>
-                <li><a href="page-shop-single-image-switch.html">Image Switch</a></li>
-                <li><a href="page-shop-single-countdown.html">Single Countdown</a></li>
-                <li><a href="page-shop-single-external-product.html">External Product</a></li>
-                <li><a href="page-shop-single-grouped-product.html">Grouped Product</a></li>
-                <li><a href="page-shop-single-bought-together.html">Bought Together</a></li>
-              </ul>
-            </li>
-            <li><span>User Dashboard</span>
-              <ul>
-                <li><a href="page-dashboard.html">Dashboard</a></li>
-                <li><a href="page-dashboard-order.html">Orders</a></li>
-                <li><a href="page-dashboard-wish-list.html">Downloads</a></li>
-                <li><a href="page-dashboard-address.html">Addresses</a></li>
-                <li><a href="page-dashboard-account-details.html">Account Details</a></li>
-                <li><a href="page-dashboard-wish-list.html">Wishlist</a></li>
-                <li><a href="page-login.html">Logout</a></li>
-              </ul>
-            </li>
-            <li><span>Shop Pages</span>
-              <ul>
-                <li><a href="page-shop-cart.html">Cart</a></li>
-                <li><a href="page-shop-checkout.html">Checkout</a></li>
-                <li><a href="page-shop-order-received.html">Order Received</a></li>
-                <li><a href="page-order-tracking.html">Order Tracking</a></li>
-                <li><a href="page-store-location.html">Store Locator</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li><span>Pages</span>
-          <ul>
-            <li><a href="page-about.html">About Us</a></li>
-            <li><span>Accounts</span>
-              <ul>
-                <li><a href="page-account-details.html">Account Details</a></li>
-                <li><a href="page-account-order.html">Account Order</a></li>
-                <li><a href="page-account-address.html">Account Address</a></li>
-                <li><a href="page-account-wishlist.html">Account Wishlist</a></li>
-                <li><a href="page-account-invoice.html">Account Invoice</a></li>
-              </ul>
-            </li>
-            <li><a href="page-become-vendor.html">Become Vendor</a></li>
-            <li><span>Vendor Pages</span>
-              <ul>
-                <li><a href="page-vendor-list.html">Vendor List</a></li>
-                <li><a href="page-vendor-single.html">Vendor Single</a></li>
-                <li><a href="page-dashboard.html">Dashboard</a></li>
-                <li><a href="page-dashboard-products.html">Products</a></li>
-                <li><a href="page-dashboard-order.html">Order</a></li>
-                <li><a href="page-dashboard-customer.html">Customer</a></li>
-                <li><a href="page-dashboard-categories.html">Categories</a></li>
-                <li><a href="page-dashboard-message.html">Message</a></li>
-                <li><a href="page-dashboard-setting.html">Settings</a></li>
-              </ul>
-            </li>
-            <li><a href="page-brands.html">Brands</a></li>
-            <li><a href="page-contact.html">Contact</a></li>
-            <li><a href="page-coming-soon.html">Coming Soon</a></li>
-            <li><a href="page-help.html">Help</a></li>
-            <li><a href="page-error.html">404 Page</a></li>
-            <li><a href="page-faq.html">Faq</a></li>
-            <li><a href="page-invoices.html">Invoices</a></li>
-            <li><a href="page-login.html">Login</a></li>
-            <li><a href="page-register.html">Register</a></li>
-            <li><a href="page-terms.html">Terms and Conditions</a></li>
-            <li><a href="page-ui-element.html">UI Elements</a></li>
-          </ul>
-        </li>
-        <li><span>Blog</span>
-          <ul>
-            <li><a href="page-blog-grid.html">Blog Grid</a></li>
-            <li><a href="page-blog-grid-sidebar.html">Blog Grid Sidebar</a></li>
-            <li><a href="page-blog-details.html">Blog Details</a></li>
-            <li><a href="page-blog-list.html">Blog List</a></li>
-            <li><a href="page-blog-single.html">Blog Single</a></li>
-            <li><a href="page-blog-single2.html">Blog Single v2</a></li>
-          </ul>
-        </li>
-        <li class="title my-3 bb1 pl20 fz20 fw500 pb-3">Departments</li>
-        <li><span><i class="flaticon-cooking mr20"></i>Home & Kitchen</span>
-          <ul>
-            <li><a href="page-shop-list-v1.html">Home & Kitchen</a></li>
-          </ul>
-        </li>
-        <li><span><i class="flaticon-armchair mr20"></i>Home & Furniture</span>
-          <ul>
-            <li><a href="page-shop-list-v1.html">Home & Furniture</a></li>
-          </ul>
-        </li>
-        <li><span><i class="flaticon-smartphone-1 mr20"></i>Electronics</span>
-          <ul>
-            <li><a href="page-shop-list-v1.html">Electronics</a></li>
-          </ul>
-        </li>
-        <li><span><i class="flaticon-bride-dress mr20"></i>Clothing & Accessories</span>
-          <ul>
-            <li><a href="page-shop-list-v1.html">Clothing & Accessories</a></li>
-          </ul>
-        </li>
-        <li><span><i class="flaticon-heart-beat mr20"></i>Health & Beauty</span>
-          <ul>
-            <li><a href="page-shop-list-v1.html">Health & Beauty</a></li>
-          </ul>
-        </li>
-        <li><span><i class="flaticon-volleyball mr20"></i>Sport & Outdoor</span>
-          <ul>
-            <li><a href="page-shop-list-v1.html">Sport & Outdoor</a></li>
-          </ul>
-        </li>
-        <li><span><i class="flaticon-groceries mr20"></i>Grocery & Market</span>
-          <ul>
-            <li><a href="page-shop-list-v1.html">Grocery & Market</a></li>
-          </ul>
-        </li>
-        <li><span><i class="flaticon-remote-control mr20"></i>Toy & Video Games</span>
-          <ul>
-            <li><a href="page-shop-list-v1.html">Toy & Video Games</a></li>
-          </ul>
-        </li>
-        <li><span><i class="flaticon-feeding-bottle mr20"></i>Babies & Moms</span>
-          <ul>
-            <li><a href="page-shop-list-v1.html">Babies & Moms</a></li>
-          </ul>
-        </li>
-        <li><a class="tdu text-thm1 text-capitalize" href="#">See More <i class="far fa-angle-down"></i></a></li>
-        <!-- Only for Mobile View -->
+            <li><a href="index.html">Home</a></li>
+                <li><a href="page-shop-list.html">Our Products</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Become a Distributor</a></li>
+                <li><a href="">Contact Us</a></li>
       </ul>
     </nav>
   </div>
   
   <div class="body_content_wrapper position-relative">
-    <!-- Custom Shop Category List Menu -->
-    <section class="p0 bb1 overflow-hidden">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="custom_shop_category_nav_list_menu">
-              <ul class="mb0 d-flex">
-                <li><a href="#">All Electronics</a></li>
-                <li><a href="#">Smart TV</a></li>
-                <li><a class="active" href="#">Laptops</a></li>
-                <li><a href="#">Cell Phones</a></li>
-                <li><a href="#">Camera & Photo</a></li>
-                <li><a href="#">Portable Audio</a></li>
-                <li><a href="#">Computers</a></li>
-                <li><a href="#">iPad & Tablets</a></li>
-                <li><a href="#">Pc Gaming</a></li>
-                <li><a href="#">Smart Home</a></li>
-                <li><a href="#">Headphones</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <!-- Inner Page Breadcrumb -->
-    <section class="inner_page_breadcrumb">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-6">
-            <div class="breadcrumb_content">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Electronics</a></li>
-                <li class="breadcrumb-item"><a href="#">Computers</a></li>
-                <li class="breadcrumb-item active" aria-current="page"><a href="#">Desktop Computers</a></li>
-              </ol>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Listing Grid View -->
-    <section class="our-listing pt10">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-xl-2 d-none d-lg-block">
-            <div class="sidebar_accordion_widget">
-              <div class="faq_according text-start">
-                <div class="accordion" id="accordionExample">
-                  <div class="card">
-                    <div class="card-header active" id="headingZero">
-                      <h4>
-                        <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseZero" aria-expanded="true" aria-controls="collapseZero">Department</button>
-                      </h4>
-                    </div>
-                    <div id="collapseZero" class="collapse show" aria-labelledby="headingZero" data-parent="#accordionExample">
-                      <div class="card-body">
-                        <div class="left_sidebar_department_widgets">
-                          <ul class="list-unstyled ps-0">
-                            <li><a href="#" class="parent_list">Electronics</a></li>
-                            <li><a href="#" class="parent_list">Computers & Accessories</a></li>
-                            <li class="mb-1"><a class="btn parent_list before_none">Computers & Tablets</a>
-                              <div>
-                                <ul class="list-unstyled pb-2">
-                                  <li><a href="#" class="child_list">Desktops</a></li>
-                                  <li><a href="#" class="child_list">Laptops</a></li>
-                                  <li><a href="#" class="child_list">Tablets</a></li>
-                                </ul>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header" id="headingOne">
-                      <h4>
-                        <button class="btn btn-link text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Filter by Brands</button>
-                      </h4>
-                    </div>
-                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                      <div class="card-body">
-                        <div class="sidebar_search_widget">
-                          <div class="blog_search_widget">
-                            <div class="input-group">
-                              <input type="text" class="form-control mb15" placeholder="Find a Brand" aria-label="Recipient's username">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="sidebar_widget_checkbox">
-                          <div class="ui_kit_checkbox pb30">
-                            <label class="custom_checkbox">Apple <span class="float-end">87</span>
-                              <input type="checkbox">
-                              <span class="checkmark"></span>
-                            </label>
-                            <label class="custom_checkbox" checked="checked">Asus <span class="float-end">92</span>
-                              <input type="checkbox">
-                              <span class="checkmark"></span>
-                            </label>
-                            <label class="custom_checkbox">Acer <span class="float-end">123</span>
-                              <input type="checkbox">
-                              <span class="checkmark"></span>
-                            </label>
-                            <label class="custom_checkbox">Dell <span class="float-end">49</span>
-                              <input type="checkbox">
-                              <span class="checkmark"></span>
-                            </label>
-                            <label class="custom_checkbox mb5">Lenovo <span class="float-end">12</span>
-                              <input type="checkbox">
-                              <span class="checkmark"></span>
-                            </label>
-                            <a href="#" class="shop_btn">Show More</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header" id="headingTwo">
-                      <h4>
-                        <button class="btn btn-link text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Price</button>
-                      </h4>
-                    </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                      <div class="card-body">
-                        <div class="sidebar_widget_checkbox">
-                          <div class="zmart_custom_range_slider mb-4 mt10">
-                            <input type="text" class="amount mt-0" placeholder="$20"> 
-                            <input type="text" class="amount2 mt-0" placeholder="$70987">
-                            <div class="slider-range mt-3 ms-2"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header" id="headingThree">
-                      <h4>
-                        <button class="btn btn-link text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">CPU Manufacturer</button>
-                      </h4>
-                    </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                      <div class="card-body">
-                        <div class="sidebar_widget_checkbox">
-                          <div class="ui_kit_checkbox pb30">
-                            <label class="custom_checkbox">AMD <span class="float-end">87</span>
-                              <input type="checkbox">
-                              <span class="checkmark"></span>
-                            </label>
-                            <label class="custom_checkbox" checked="checked">Apple <span class="float-end">92</span>
-                              <input type="checkbox">
-                              <span class="checkmark"></span>
-                            </label>
-                            <label class="custom_checkbox">Intel <span class="float-end">123</span>
-                              <input type="checkbox">
-                              <span class="checkmark"></span>
-                            </label>
-                            <label class="custom_checkbox">NVIDIA <span class="float-end">49</span>
-                              <input type="checkbox">
-                              <span class="checkmark"></span>
-                            </label>
-                            <label class="custom_checkbox mb5">Qualcomm <span class="float-end">12</span>
-                              <input type="checkbox">
-                              <span class="checkmark"></span>
-                            </label>
-                            <a href="#" class="shop_btn">Show More</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header" id="headingFour">
-                      <h4>
-                        <button class="btn btn-link text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">Memory Capacity</button>
-                      </h4>
-                    </div>
-                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                      <div class="card-body">
-                        <div class="sidebar_widget_checkbox">
-                          <div class="ui_kit_checkbox pb30">
-                            <label class="custom_checkbox">16 GB <span class="float-end">87</span>
-                              <input type="checkbox">
-                              <span class="checkmark"></span>
-                            </label>
-                            <label class="custom_checkbox" checked="checked">32 GB <span class="float-end">92</span>
-                              <input type="checkbox">
-                              <span class="checkmark"></span>
-                            </label>
-                            <label class="custom_checkbox">64 GB <span class="float-end">123</span>
-                              <input type="checkbox">
-                              <span class="checkmark"></span>
-                            </label>
-                            <label class="custom_checkbox">128 GB <span class="float-end">49</span>
-                              <input type="checkbox">
-                              <span class="checkmark"></span>
-                            </label>
-                            <label class="custom_checkbox mb5">1 TB <span class="float-end">12</span>
-                              <input type="checkbox">
-                              <span class="checkmark"></span>
-                            </label>
-                            <a href="#" class="shop_btn">Show More</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header" id="headingFive">
-                      <h4>
-                        <button class="btn btn-link text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">Screen Size</button>
-                      </h4>
-                    </div>
-                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                      <div class="card-body">
-                        <div class="sidebar_widget_checkbox">
-                          <div class="ui_kit_checkbox pb30">
-                            <label class="custom_checkbox">17 Inches & Above <span class="float-end">87</span>
-                              <input type="checkbox">
-                              <span class="checkmark"></span>
-                            </label>
-                            <label class="custom_checkbox" checked="checked">16 to 16.9 Inches <span class="float-end">92</span>
-                              <input type="checkbox">
-                              <span class="checkmark"></span>
-                            </label>
-                            <label class="custom_checkbox">15 to 15.9 Inches <span class="float-end">123</span>
-                              <input type="checkbox">
-                              <span class="checkmark"></span>
-                            </label>
-                            <label class="custom_checkbox">14 to 14.9 Inches <span class="float-end">49</span>
-                              <input type="checkbox">
-                              <span class="checkmark"></span>
-                            </label>
-                            <label class="custom_checkbox mb5">13 to 13.9 Inches <span class="float-end">12</span>
-                              <input type="checkbox">
-                              <span class="checkmark"></span>
-                            </label>
-                            <a href="#" class="shop_btn">Show More</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header" id="headingSix">
-                      <h4>
-                        <button class="btn btn-link text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">Display Resolution</button>
-                      </h4>
-                    </div>
-                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
-                      <div class="card-body">
-                        <div class="sidebar_widget_checkbox">
-                          <div class="ui_kit_checkbox pb30">
-                            <label class="custom_checkbox">1024 x 600 pixel <span class="float-end">87</span>
-                              <input type="checkbox">
-                              <span class="checkmark"></span>
-                            </label>
-                            <label class="custom_checkbox" checked="checked">1024 x 768 pixel <span class="float-end">92</span>
-                              <input type="checkbox">
-                              <span class="checkmark"></span>
-                            </label>
-                            <label class="custom_checkbox">1280 x 720 pixel <span class="float-end">123</span>
-                              <input type="checkbox">
-                              <span class="checkmark"></span>
-                            </label>
-                            <label class="custom_checkbox">1280 x 800 pixel <span class="float-end">49</span>
-                              <input type="checkbox">
-                              <span class="checkmark"></span>
-                            </label>
-                            <label class="custom_checkbox mb5">1366 x 768 pixel <span class="float-end">12</span>
-                              <input type="checkbox">
-                              <span class="checkmark"></span>
-                            </label>
-                            <a href="#" class="shop_btn">Show More</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header" id="headingSeven">
-                      <h4>
-                        <button class="btn btn-link text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">Color</button>
-                      </h4>
-                    </div>
-                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
-                      <div class="card-body">
-                        <div class="color_chose_list_sscs_page shop_single_natabmenu sidebar_widget_checkbox color_style color_switch">
-                          <div class="align-items-center">
-                            <div class="nav nav-pills" id="v-pills-tab2" role="tablist" aria-orientation="vertical">
-                              <button class="nav-link p-0 active me-2" id="v-pills-color7-tab" data-bs-toggle="pill" data-bs-target="#v-pills-color7" type="button" role="tab" aria-controls="v-pills-color7" aria-selected="true">
-                                <span class="custom_selectable_radio_btn d-flex">
-                                  <span>
-                                    <input id="radio-7" class="radio-custom dark_bg" name="radio-group" type="radio" checked>
-                                    <label for="radio-7" class="radio-custom-label dark_bg"></label>
-                                  </span>
-                                </span>
-                              </button>
-                              <button class="nav-link p-0 me-2" id="v-pills-color8-tab" data-bs-toggle="pill" data-bs-target="#v-pills-color8" type="button" role="tab" aria-controls="v-pills-color8" aria-selected="false">
-                                <span class="custom_selectable_radio_btn">
-                                  <span>
-                                    <input id="radio-8" class="radio-custom violet_bg" name="radio-group" type="radio">
-                                    <label for="radio-8" class="radio-custom-label violet_bg"></label>
-                                  </span>
-                                </span>
-                              </button>
-                              <button class="nav-link p-0 me-2" id="v-pills-color9-tab" data-bs-toggle="pill" data-bs-target="#v-pills-color9" type="button" role="tab" aria-controls="v-pills-color9" aria-selected="false">
-                                <span class="custom_selectable_radio_btn">
-                                  <span>
-                                    <input id="radio-9" class="radio-custom light_blue_bg" name="radio-group" type="radio">
-                                    <label for="radio-9" class="radio-custom-label light_blue_bg"></label>
-                                  </span>
-                                </span>
-                              </button>
-                              <button class="nav-link p-0 me-2" id="v-pills-color10-tab" data-bs-toggle="pill" data-bs-target="#v-pills-color10" type="button" role="tab" aria-controls="v-pills-color10" aria-selected="false">
-                                <div class="custom_selectable_radio_btn">
-                                  <div>
-                                    <input id="radio-10" class="radio-custom yellow_bg" name="radio-group" type="radio">
-                                    <label for="radio-10" class="radio-custom-label yellow_bg"></label>
-                                  </div>
-                                </div>
-                              </button>
-                              <button class="nav-link p-0 me-2" id="v-pills-color11-tab" data-bs-toggle="pill" data-bs-target="#v-pills-color11" type="button" role="tab" aria-controls="v-pills-color11" aria-selected="false">
-                                <span class="custom_selectable_radio_btn">
-                                  <span>
-                                    <input id="radio-11" class="radio-custom gray_bg" name="radio-group" type="radio">
-                                    <label for="radio-11" class="radio-custom-label gray_bg"></label>
-                                  </span>
-                                </span>
-                              </button>
-                              <button class="nav-link p-0" id="v-pills-color12-tab" data-bs-toggle="pill" data-bs-target="#v-pills-color12" type="button" role="tab" aria-controls="v-pills-color12" aria-selected="false">
-                                <span class="custom_selectable_radio_btn">
-                                  <span>
-                                    <input id="radio-12" class="radio-custom" name="radio-group" type="radio">
-                                    <label for="radio-12" class="radio-custom-label"></label>
-                                  </span>
-                                </span>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header" id="headingEight">
-                      <h4>
-                        <button class="btn btn-link text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">Customer Rating</button>
-                      </h4>
-                    </div>
-                    <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
-                      <div class="card-body">
-                        <div class="sidebar_widget_checkbox">
-                          <div class="ui_kit_radiobox2 pb30">
-                            <div class="radiobox_style2">
-                              <input type="radio" id="test1" name="radio-group">
-                              <label class="d-flex justify-content-between" for="test1">
-                                <span>
-                                  <div class="sspd_postdate me-2">
-                                    <div class="sspd_review">
-                                      <ul class="mb0">
-                                        <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
-                                        <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
-                                        <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
-                                        <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
-                                        <li class="list-inline-item"><a href="#"><i class="fal fa-star heading-color"></i></a></li>
-                                        <li class="list-inline-item"><span class="heading-color">& up</span></li>
-                                      </ul>
-                                    </div>
-                                  </div>
-                                </span>
-                                <span class="count">87</span>
-                              </label>
-                            </div>
-                            <div class="radiobox_style2">
-                              <input type="radio" id="test2" name="radio-group">
-                              <label class="d-flex justify-content-between" for="test2">
-                                <span>
-                                  <div class="sspd_postdate me-2">
-                                    <div class="sspd_review">
-                                      <ul class="mb0">
-                                        <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
-                                        <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
-                                        <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
-                                        <li class="list-inline-item"><a href="#"><i class="fal fa-star heading-color"></i></a></li>
-                                        <li class="list-inline-item"><a href="#"><i class="fal fa-star heading-color"></i></a></li>
-                                        <li class="list-inline-item"><span class="heading-color">& up</span></li>
-                                      </ul>
-                                    </div>
-                                  </div>
-                                </span>
-                                <span class="count">92</span>
-                              </label>
-                            </div>
-                            <div class="radiobox_style2">
-                              <input type="radio" id="test3" name="radio-group">
-                              <label class="d-flex justify-content-between" for="test3">
-                                <span>
-                                  <div class="sspd_postdate me-2">
-                                    <div class="sspd_review">
-                                      <ul class="mb0">
-                                        <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
-                                        <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
-                                        <li class="list-inline-item"><a href="#"><i class="fal fa-star"></i></a></li>
-                                        <li class="list-inline-item"><a href="#"><i class="fal fa-star heading-color"></i></a></li>
-                                        <li class="list-inline-item"><a href="#"><i class="fal fa-star heading-color"></i></a></li>
-                                        <li class="list-inline-item"><span class="heading-color">& up</span></li>
-                                      </ul>
-                                    </div>
-                                  </div>
-                                </span>
-                                <span class="count">123</span>
-                              </label>
-                            </div>
-                            <div class="radiobox_style2">
-                              <input type="radio" id="test4" name="radio-group">
-                              <label class="d-flex justify-content-between" for="test4">
-                                <span>
-                                  <div class="sspd_postdate me-2">
-                                    <div class="sspd_review">
-                                      <ul class="mb0">
-                                        <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
-                                        <li class="list-inline-item"><a href="#"><i class="fal fa-star heading-color"></i></a></li>
-                                        <li class="list-inline-item"><a href="#"><i class="fal fa-star heading-color"></i></a></li>
-                                        <li class="list-inline-item"><a href="#"><i class="fal fa-star heading-color"></i></a></li>
-                                        <li class="list-inline-item"><a href="#"><i class="fal fa-star heading-color"></i></a></li>
-                                        <li class="list-inline-item"><span class="heading-color">& up</span></li>
-                                      </ul>
-                                    </div>
-                                  </div>
-                                </span>
-                                <span class="count">49</span>
-                              </label>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card-header" id="headingNine">
-                      <h4>
-                        <button class="btn btn-link text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">Condition</button>
-                      </h4>
-                    </div>
-                    <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
-                      <div class="card-body">
-                        <div class="sidebar_widget_checkbox">
-                          <div class="ui_kit_checkbox pb30">
-                            <label class="custom_checkbox">New <span class="float-end">87</span>
-                              <input type="checkbox">
-                              <span class="checkmark"></span>
-                            </label>
-                            <label class="custom_checkbox" checked="checked">Used <span class="float-end">92</span>
-                              <input type="checkbox">
-                              <span class="checkmark"></span>
-                            </label>
-                            <label class="custom_checkbox">Renewed <span class="float-end">123</span>
-                              <input type="checkbox">
-                              <span class="checkmark"></span>
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
           <div class="col-lg-9 col-xl-10 pl50 pl15-md">
             <div class="row">
               <div class="col-lg-12">
                 <div class="main-title bb1 pb10">
-                  <h2 class="title">Laptops and Accessories</h2>
-                  <p>Shop laptops, desktops, monitors, tablets, PC gaming, hard drives and storage, accessories and more</p>
+                  <h2 class="title">Baby Silk and Quality Wipes</h2>
+                  <p>baby wipes, silk wipes, quality wipes</p>
                 </div>
               </div>
             </div>
@@ -1084,7 +394,7 @@
               <div class="col-lg-7">
                 <div class="filter_components">
                   <ul class="mb0 align-items-center text-center text-lg-start">
-                    <li class="list-inline-item me-2 mb-3"><p class="pagination_page_count">Showing 1–20 of 175 results</p></li>
+                    <li class="list-inline-item me-2 mb-3"><p class="pagination_page_count">Showing 1–20 of 115 results</p></li>
                     <li class="list-inline-item me-2 list mb-3 pl10"><a href="#">20</a></li>
                     <li class="list-inline-item me-2 list mb-3 pl10"><a href="#">40</a></li>
                     <li class="list-inline-item me-2 list mb-3 pl10"><a href="#">60</a></li>
@@ -1092,35 +402,15 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-lg-5">
-                <div class="filter_components text-center text-lg-end">
-                  <ul class="mb-2 mb-md-0">
-                    <li class="list-inline-item d-lg-none me-2 mb-3"><a class="all-filter-btn flter_btn" href="#"><span class="flaticon-sort me-2"></span>All Filter</a></li>
-                    <li class="list-inline-item me-0">
-                      <div class="page_control_shorting mb20 text-center text-md-end">
-                        <select class="selectpicker show-tick">
-                          <option>Default sorting</option>
-                          <option>Best Seller</option>
-                          <option>Best Match</option>
-                          <option>Price Low</option>
-                          <option>Price High</option>
-                        </select>
-                      </div>
-                    </li>
-                    <li class="d-none d-lg-inline-block list px-2"><a href="#">List</a></li>
-                    <li class="d-none d-lg-inline-block gird ps-2"><a href="#">Grid</a></li>
-                  </ul>
-                </div>
-              </div>
               <div class="row">
                 <div class="col-md-6 col-lg-12">
                   <div class="shop_item list_style bdr1 my--1 align-items-center row">
                     <div class="thumb text-center text-md-start col-xl-4 col-xxl-3">
-                      <img src="images/shop-items/shop-item1.png" alt="Shop Item1">
+                      <img src="images/image3.jpg" alt="Shop Item1">
                     </div>
                     <div class="details ps-0 ps-lg-4 col-xl-8 col-xxl-6">
-                      <div class="sub_title">lenovo</div>
-                      <div class="title"><a href="#">Lenovo IdeaPad 3 15.6" Laptop - Sand (Intel Core i7-1165G7/512GB SSD/12GB RAM/Windows 11)</a></div>
+                      <div class="sub_title">QUALITY</div>
+                      <div class="title"><a href="#">Cherix Baby Wiper 120Pcs </a></div>
                       <div class="review d-block d-md-flex">
                         <ul class="m-0 mb-md-3 me-2">
                           <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
@@ -1129,20 +419,20 @@
                           <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
                           <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
                         </ul>
-                        <div class="review_count"><a href="#">3,014 reviews</a></div>
+                        <div class="review_count"><a href="#">384 reviews</a></div>
                       </div>
                       <div class="shop_item_list_features mb10-lg">
                         <ul class="mb0 order_list list-style-type-bullet">
-                          <li><a href="#">16-core Neural Engine for advanced machine learning</a></li>
-                          <li><a href="#">8GB of unified memory so everything you do is fast and fluid</a></li>
-                          <li><a href="#">256GB of super-fast SSD storage launches apps and opens files</a></li>
-                          <li><a href="#">7-core GPU with up to 5 times faster graphics for graphics-intensive</a></li>
+                          <li><a href="#">Wet Wipe for Baby Comfort</a></li>
+                          <li><a href="#">Made with silk material to avoid rash</a></li>
+                          <li><a href="#">Quality is guaranteed</a></li>
+                          <li><a href="#">Soft and gentle on the skin.</a></li>
                         </ul>
                       </div>
                     </div>
                     <div class="si_right_content text-center col-xl-4 col-xxl-3">
                       <div class="si_footer">
-                        <div class="price">$899.99 <small><del>$45</del></small></div>
+                        <div class="price">#3000<small><del>#4,500</del></small></div>
                       </div>
                       <div class="sifoter_bottom">
                         <div class="shop_item_cart_btn mb20">
@@ -1150,9 +440,7 @@
                         </div>
                         <div class="product_action_info">
                           <ul class="mb0">
-                            <li class="list-inline-item"><a href="page-dashboard-wish-list.html"><span class="flaticon-heart"></span> Add to Wishlist</a></li>
-                            <li class="list-inline-item ps-2"><a href="page-shop-list-v6.html"><span class="flaticon-graph"></span> Compare</a></li>
-                          </ul>
+                            <li class="list-inline-item"><a href="page-dashboard-wish-list.html"><span class="flaticon-heart"></span> Add to Wishlist</a></li>                          </ul>
                         </div>
                       </div>
                     </div>
@@ -1161,11 +449,11 @@
                 <div class="col-md-6 col-lg-12">
                   <div class="shop_item list_style bdr1 my--1 align-items-center row">
                     <div class="thumb text-center text-md-start col-xl-4 col-xxl-3">
-                      <img src="images/shop-items/shop-item3.png" alt="Shop Item3">
+                      <img src="images/image3.jpg" alt="Shop Item1">
                     </div>
                     <div class="details ps-0 ps-lg-4 col-xl-8 col-xxl-6">
-                      <div class="sub_title">lenovo</div>
-                      <div class="title"><a href="#">Lenovo IdeaPad 3 15.6" Laptop - Sand (Intel Core i7-1165G7/512GB SSD/12GB RAM/Windows 11)</a></div>
+                      <div class="sub_title">QUALITY</div>
+                      <div class="title"><a href="#">Cherix Baby Wiper 120Pcs </a></div>
                       <div class="review d-block d-md-flex">
                         <ul class="m-0 mb-md-3 me-2">
                           <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
@@ -1174,20 +462,20 @@
                           <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
                           <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
                         </ul>
-                        <div class="review_count"><a href="#">3,014 reviews</a></div>
+                        <div class="review_count"><a href="#">384 reviews</a></div>
                       </div>
                       <div class="shop_item_list_features mb10-lg">
                         <ul class="mb0 order_list list-style-type-bullet">
-                          <li><a href="#">16-core Neural Engine for advanced machine learning</a></li>
-                          <li><a href="#">8GB of unified memory so everything you do is fast and fluid</a></li>
-                          <li><a href="#">256GB of super-fast SSD storage launches apps and opens files</a></li>
-                          <li><a href="#">7-core GPU with up to 5 times faster graphics for graphics-intensive</a></li>
+                          <li><a href="#">Wet Wipe for Baby Comfort</a></li>
+                          <li><a href="#">Made with silk material to avoid rash</a></li>
+                          <li><a href="#">Quality is guaranteed</a></li>
+                          <li><a href="#">Soft and gentle on the skin.</a></li>
                         </ul>
                       </div>
                     </div>
                     <div class="si_right_content text-center col-xl-4 col-xxl-3">
                       <div class="si_footer">
-                        <div class="price">$899.99 <small><del>$45</del></small></div>
+                        <div class="price">#3000<small><del>#4,500</del></small></div>
                       </div>
                       <div class="sifoter_bottom">
                         <div class="shop_item_cart_btn mb20">
@@ -1195,9 +483,7 @@
                         </div>
                         <div class="product_action_info">
                           <ul class="mb0">
-                            <li class="list-inline-item"><a href="page-dashboard-wish-list.html"><span class="flaticon-heart"></span> Add to Wishlist</a></li>
-                            <li class="list-inline-item ps-2"><a href="page-shop-list-v6.html"><span class="flaticon-graph"></span> Compare</a></li>
-                          </ul>
+                            <li class="list-inline-item"><a href="page-dashboard-wish-list.html"><span class="flaticon-heart"></span> Add to Wishlist</a></li>                          </ul>
                         </div>
                       </div>
                     </div>
@@ -1206,11 +492,11 @@
                 <div class="col-md-6 col-lg-12">
                   <div class="shop_item list_style bdr1 my--1 align-items-center row">
                     <div class="thumb text-center text-md-start col-xl-4 col-xxl-3">
-                      <img src="images/shop-items/shop-item9.png" alt="Shop Item9">
+                      <img src="images/image3.jpg" alt="Shop Item1">
                     </div>
                     <div class="details ps-0 ps-lg-4 col-xl-8 col-xxl-6">
-                      <div class="sub_title">lenovo</div>
-                      <div class="title"><a href="#">Lenovo IdeaPad 3 15.6" Laptop - Sand (Intel Core i7-1165G7/512GB SSD/12GB RAM/Windows 11)</a></div>
+                      <div class="sub_title">QUALITY</div>
+                      <div class="title"><a href="#">Cherix Baby Wiper 120Pcs </a></div>
                       <div class="review d-block d-md-flex">
                         <ul class="m-0 mb-md-3 me-2">
                           <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
@@ -1219,20 +505,20 @@
                           <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
                           <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
                         </ul>
-                        <div class="review_count"><a href="#">3,014 reviews</a></div>
+                        <div class="review_count"><a href="#">384 reviews</a></div>
                       </div>
                       <div class="shop_item_list_features mb10-lg">
                         <ul class="mb0 order_list list-style-type-bullet">
-                          <li><a href="#">16-core Neural Engine for advanced machine learning</a></li>
-                          <li><a href="#">8GB of unified memory so everything you do is fast and fluid</a></li>
-                          <li><a href="#">256GB of super-fast SSD storage launches apps and opens files</a></li>
-                          <li><a href="#">7-core GPU with up to 5 times faster graphics for graphics-intensive</a></li>
+                          <li><a href="#">Wet Wipe for Baby Comfort</a></li>
+                          <li><a href="#">Made with silk material to avoid rash</a></li>
+                          <li><a href="#">Quality is guaranteed</a></li>
+                          <li><a href="#">Soft and gentle on the skin.</a></li>
                         </ul>
                       </div>
                     </div>
                     <div class="si_right_content text-center col-xl-4 col-xxl-3">
                       <div class="si_footer">
-                        <div class="price">$899.99 <small><del>$45</del></small></div>
+                        <div class="price">#3000<small><del>#4,500</del></small></div>
                       </div>
                       <div class="sifoter_bottom">
                         <div class="shop_item_cart_btn mb20">
@@ -1240,239 +526,13 @@
                         </div>
                         <div class="product_action_info">
                           <ul class="mb0">
-                            <li class="list-inline-item"><a href="page-dashboard-wish-list.html"><span class="flaticon-heart"></span> Add to Wishlist</a></li>
-                            <li class="list-inline-item ps-2"><a href="page-shop-list-v6.html"><span class="flaticon-graph"></span> Compare</a></li>
-                          </ul>
+                            <li class="list-inline-item"><a href="page-dashboard-wish-list.html"><span class="flaticon-heart"></span> Add to Wishlist</a></li>                          </ul>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6 col-lg-12">
-                  <div class="shop_item list_style bdr1 my--1 align-items-center row">
-                    <div class="thumb text-center text-md-start col-xl-4 col-xxl-3">
-                      <img src="images/shop-items/shop-item14.png" alt="Shop Item14">
-                    </div>
-                    <div class="details ps-0 ps-lg-4 col-xl-8 col-xxl-6">
-                      <div class="sub_title">lenovo</div>
-                      <div class="title"><a href="#">Lenovo IdeaPad 3 15.6" Laptop - Sand (Intel Core i7-1165G7/512GB SSD/12GB RAM/Windows 11)</a></div>
-                      <div class="review d-block d-md-flex">
-                        <ul class="m-0 mb-md-3 me-2">
-                          <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
-                          <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
-                          <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
-                          <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
-                          <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
-                        </ul>
-                        <div class="review_count"><a href="#">3,014 reviews</a></div>
-                      </div>
-                      <div class="shop_item_list_features mb10-lg">
-                        <ul class="mb0 order_list list-style-type-bullet">
-                          <li><a href="#">16-core Neural Engine for advanced machine learning</a></li>
-                          <li><a href="#">8GB of unified memory so everything you do is fast and fluid</a></li>
-                          <li><a href="#">256GB of super-fast SSD storage launches apps and opens files</a></li>
-                          <li><a href="#">7-core GPU with up to 5 times faster graphics for graphics-intensive</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="si_right_content text-center col-xl-4 col-xxl-3">
-                      <div class="si_footer">
-                        <div class="price">$899.99 <small><del>$45</del></small></div>
-                      </div>
-                      <div class="sifoter_bottom">
-                        <div class="shop_item_cart_btn mb20">
-                          <a href="page-shop-cart.html" class="btn btn-thm w100">Add to Cart</a>
-                        </div>
-                        <div class="product_action_info">
-                          <ul class="mb0">
-                            <li class="list-inline-item"><a href="page-dashboard-wish-list.html"><span class="flaticon-heart"></span> Add to Wishlist</a></li>
-                            <li class="list-inline-item ps-2"><a href="page-shop-list-v6.html"><span class="flaticon-graph"></span> Compare</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-12">
-                  <div class="shop_item list_style bdr1 my--1 align-items-center row">
-                    <div class="thumb text-center text-md-start col-xl-4 col-xxl-3">
-                      <img src="images/shop-items/shop-item16.png" alt="Shop Item16">
-                    </div>
-                    <div class="details ps-0 ps-lg-4 col-xl-8 col-xxl-6">
-                      <div class="sub_title">lenovo</div>
-                      <div class="title"><a href="#">Lenovo IdeaPad 3 15.6" Laptop - Sand (Intel Core i7-1165G7/512GB SSD/12GB RAM/Windows 11)</a></div>
-                      <div class="review d-block d-md-flex">
-                        <ul class="m-0 mb-md-3 me-2">
-                          <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
-                          <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
-                          <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
-                          <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
-                          <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
-                        </ul>
-                        <div class="review_count"><a href="#">3,014 reviews</a></div>
-                      </div>
-                      <div class="shop_item_list_features mb10-lg">
-                        <ul class="mb0 order_list list-style-type-bullet">
-                          <li><a href="#">16-core Neural Engine for advanced machine learning</a></li>
-                          <li><a href="#">8GB of unified memory so everything you do is fast and fluid</a></li>
-                          <li><a href="#">256GB of super-fast SSD storage launches apps and opens files</a></li>
-                          <li><a href="#">7-core GPU with up to 5 times faster graphics for graphics-intensive</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="si_right_content text-center col-xl-4 col-xxl-3">
-                      <div class="si_footer">
-                        <div class="price">$899.99 <small><del>$45</del></small></div>
-                      </div>
-                      <div class="sifoter_bottom">
-                        <div class="shop_item_cart_btn mb20">
-                          <a href="page-shop-cart.html" class="btn btn-thm w100">Add to Cart</a>
-                        </div>
-                        <div class="product_action_info">
-                          <ul class="mb0">
-                            <li class="list-inline-item"><a href="page-dashboard-wish-list.html"><span class="flaticon-heart"></span> Add to Wishlist</a></li>
-                            <li class="list-inline-item ps-2"><a href="page-shop-list-v6.html"><span class="flaticon-graph"></span> Compare</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-12">
-                  <div class="shop_item list_style bdr1 my--1 align-items-center row">
-                    <div class="thumb text-center text-md-start col-xl-4 col-xxl-3">
-                      <img src="images/shop-items/shop-item12.png" alt="Shop Item12">
-                    </div>
-                    <div class="details ps-0 ps-lg-4 col-xl-8 col-xxl-6">
-                      <div class="sub_title">lenovo</div>
-                      <div class="title"><a href="#">Lenovo IdeaPad 3 15.6" Laptop - Sand (Intel Core i7-1165G7/512GB SSD/12GB RAM/Windows 11)</a></div>
-                      <div class="review d-block d-md-flex">
-                        <ul class="m-0 mb-md-3 me-2">
-                          <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
-                          <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
-                          <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
-                          <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
-                          <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
-                        </ul>
-                        <div class="review_count"><a href="#">3,014 reviews</a></div>
-                      </div>
-                      <div class="shop_item_list_features mb10-lg">
-                        <ul class="mb0 order_list list-style-type-bullet">
-                          <li><a href="#">16-core Neural Engine for advanced machine learning</a></li>
-                          <li><a href="#">8GB of unified memory so everything you do is fast and fluid</a></li>
-                          <li><a href="#">256GB of super-fast SSD storage launches apps and opens files</a></li>
-                          <li><a href="#">7-core GPU with up to 5 times faster graphics for graphics-intensive</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="si_right_content text-center col-xl-4 col-xxl-3">
-                      <div class="si_footer">
-                        <div class="price">$899.99 <small><del>$45</del></small></div>
-                      </div>
-                      <div class="sifoter_bottom">
-                        <div class="shop_item_cart_btn mb20">
-                          <a href="page-shop-cart.html" class="btn btn-thm w100">Add to Cart</a>
-                        </div>
-                        <div class="product_action_info">
-                          <ul class="mb0">
-                            <li class="list-inline-item"><a href="page-dashboard-wish-list.html"><span class="flaticon-heart"></span> Add to Wishlist</a></li>
-                            <li class="list-inline-item ps-2"><a href="page-shop-list-v6.html"><span class="flaticon-graph"></span> Compare</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-12">
-                  <div class="shop_item list_style bdr1 my--1 align-items-center row">
-                    <div class="thumb text-center text-md-start col-xl-4 col-xxl-3">
-                      <img src="images/shop-items/shop-item11.png" alt="Shop Item11">
-                    </div>
-                    <div class="details ps-0 ps-lg-4 col-xl-8 col-xxl-6">
-                      <div class="sub_title">lenovo</div>
-                      <div class="title"><a href="#">Lenovo IdeaPad 3 15.6" Laptop - Sand (Intel Core i7-1165G7/512GB SSD/12GB RAM/Windows 11)</a></div>
-                      <div class="review d-block d-md-flex">
-                        <ul class="m-0 mb-md-3 me-2">
-                          <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
-                          <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
-                          <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
-                          <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
-                          <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
-                        </ul>
-                        <div class="review_count"><a href="#">3,014 reviews</a></div>
-                      </div>
-                      <div class="shop_item_list_features mb10-lg">
-                        <ul class="mb0 order_list list-style-type-bullet">
-                          <li><a href="#">16-core Neural Engine for advanced machine learning</a></li>
-                          <li><a href="#">8GB of unified memory so everything you do is fast and fluid</a></li>
-                          <li><a href="#">256GB of super-fast SSD storage launches apps and opens files</a></li>
-                          <li><a href="#">7-core GPU with up to 5 times faster graphics for graphics-intensive</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="si_right_content text-center col-xl-4 col-xxl-3">
-                      <div class="si_footer">
-                        <div class="price">$899.99 <small><del>$45</del></small></div>
-                      </div>
-                      <div class="sifoter_bottom">
-                        <div class="shop_item_cart_btn mb20">
-                          <a href="page-shop-cart.html" class="btn btn-thm w100">Add to Cart</a>
-                        </div>
-                        <div class="product_action_info">
-                          <ul class="mb0">
-                            <li class="list-inline-item"><a href="page-dashboard-wish-list.html"><span class="flaticon-heart"></span> Add to Wishlist</a></li>
-                            <li class="list-inline-item ps-2"><a href="page-shop-list-v6.html"><span class="flaticon-graph"></span> Compare</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-12">
-                  <div class="shop_item list_style bdr1 my--1 align-items-center row">
-                    <div class="thumb text-center text-md-start col-xl-4 col-xxl-3">
-                      <img src="images/shop-items/shop-item5.png" alt="Shop Item5">
-                    </div>
-                    <div class="details ps-0 ps-lg-4 col-xl-8 col-xxl-6">
-                      <div class="sub_title">lenovo</div>
-                      <div class="title"><a href="#">Lenovo IdeaPad 3 15.6" Laptop - Sand (Intel Core i7-1165G7/512GB SSD/12GB RAM/Windows 11)</a></div>
-                      <div class="review d-block d-md-flex">
-                        <ul class="m-0 mb-md-3 me-2">
-                          <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
-                          <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
-                          <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
-                          <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
-                          <li class="list-inline-item"><a href="#"><i class="fas fa-star"></i></a></li>
-                        </ul>
-                        <div class="review_count"><a href="#">3,014 reviews</a></div>
-                      </div>
-                      <div class="shop_item_list_features mb10-lg">
-                        <ul class="mb0 order_list list-style-type-bullet">
-                          <li><a href="#">16-core Neural Engine for advanced machine learning</a></li>
-                          <li><a href="#">8GB of unified memory so everything you do is fast and fluid</a></li>
-                          <li><a href="#">256GB of super-fast SSD storage launches apps and opens files</a></li>
-                          <li><a href="#">7-core GPU with up to 5 times faster graphics for graphics-intensive</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="si_right_content text-center col-xl-4 col-xxl-3">
-                      <div class="si_footer">
-                        <div class="price">$899.99 <small><del>$45</del></small></div>
-                      </div>
-                      <div class="sifoter_bottom">
-                        <div class="shop_item_cart_btn mb20">
-                          <a href="page-shop-cart.html" class="btn btn-thm w100">Add to Cart</a>
-                        </div>
-                        <div class="product_action_info">
-                          <ul class="mb0">
-                            <li class="list-inline-item"><a href="page-dashboard-wish-list.html"><span class="flaticon-heart"></span> Add to Wishlist</a></li>
-                            <li class="list-inline-item ps-2"><a href="page-shop-list-v6.html"><span class="flaticon-graph"></span> Compare</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+               
               </div>
               <div class="row">
                 <div class="col-lg-12">
@@ -1489,12 +549,12 @@
                       <li class="page-item"><a class="page-link" href="#">4</a></li>
                       <li class="page-item"><a class="page-link" href="#">5</a></li>
                       <li class="page-item"><a class="page-link" href="#">...</a></li>
-                      <li class="page-item"><a class="page-link" href="#">20</a></li>
+                      <li class="page-item"><a class="page-link" href="#">10</a></li>
                       <li class="page-item">
                         <a class="page-link" href="#"><span class="fas fa-angle-right"></span></a>
                       </li>
                     </ul>
-                    <p class="mt20 pagination_page_count text-center">1 – 20 of 300+ properties found</p>
+                    <p class="mt20 pagination_page_count text-center">1 – 20 of 20+ Items found</p>
                   </div>
                 </div>
               </div>
@@ -1505,34 +565,16 @@
     </section>
 
     <!-- Our Footer -->
-    <section class="footer_one home1 bdrt1">
+    <section class="footer_one home1 pt0">
       <div class="container pb60">
-        <div class="row">
-          <div class="col-lg-6 offset-lg-3">
-            <div class="mailchimp_widget mb30-md text-center">
-              <div class="icon float-start"><span class="flaticon-email-1"></span></div>
-              <div class="details">
-                <h3 class="title">Subscribe and get 20% discount.</h3>
-              </div>
-            </div>
-            <div class="footer_social_widget">
-              <form class="footer_mailchimp_form">
-                <div class="row align-items-center">
-                  <div class="col-auto">
-                    <input type="email" class="form-control" placeholder="Your email address">
-                    <button class="ms-sm-2 btn-thm" type="submit">Subscribe</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
         <div class="row mt60">
           <div class="col-sm-6 col-md-5 col-lg-3 col-xl-3">
             <div class="footer_contact_widget">
               <h4>Contact Us</h4>
               <div class="footer_contact_iconbox d-flex mb-4">
-                <div class="icon"><span class="flaticon-phone-call"></span></div>
+                <div class="icon">
+                  <span class="flaticon-phone-call"></span>
+                </div>
                 <div class="details ms-4">
                   <h5 class="title">Monday-Friday: 08am-9pm</h5>
                   <a href="#">+(1) 123 456 7890</a>
@@ -1542,21 +584,9 @@
                 <div class="icon"><span class="flaticon-email"></span></div>
                 <div class="details ms-4">
                   <h5 class="title">Need help with your order?</h5>
-                  <a href="#">support@zeomart.com</a>
+                  <a href="#">support@gmail.com</a>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3 col-lg-2 col-xl-2">
-            <div class="footer_qlink_widget">
-              <h4>About Zenmart</h4>
-              <ul class="list-unstyled">
-                <li><a href="#">Track Your Order</a></li>
-                <li><a href="#">Product Guides</a></li>
-                <li><a href="#">Wishlists</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Store Locator</a></li>
-              </ul>
             </div>
           </div>
           <div class="col-sm-6 col-md-3 col-lg-2 col-xl-2">
@@ -1565,55 +595,80 @@
               <ul class="list-unstyled">
                 <li><a href="#">Contact Us</a></li>
                 <li><a href="#">Help Centre</a></li>
-                <li><a href="#">Returns & Exchanges</a></li>
-                <li><a href="#">Best Buy Financing</a></li>
-                <li><a href="#">Best Buy Gift Card</a></li>
+                <li><a href="#">Become a Distributor</a></li>
               </ul>
             </div>
           </div>
           <div class="col-sm-6 col-md-3 col-lg-2 col-xl-2">
-            <div class="footer_qlink_widget">
-              <h4>Services</h4>
-              <ul class="list-unstyled">
-                <li><a href="#">Geek Squad</a></li>
-                <li><a href="#">In-Home Advisor</a></li>
-                <li><a href="#">Trade-In Program</a></li>
-                <li><a href="#">Electronics Recycling</a></li>
-                <li><a href="#">Best Buy Health</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-8 col-md-5 col-lg-3 col-xl-3">
             <div class="footer_social_widget">
               <h4 class="title">Follow us</h4>
               <div class="social_icon_list mt30">
                 <ul class="mb20">
-                  <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
-                  <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                  <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                  <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                  <li class="list-inline-item">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                  </li>
                 </ul>
               </div>
             </div>
-            <div class="footer_mobile_app_widget mb25">
-              <h4 class="title mb10">Mobile Apps</h4>
-              <div class="mobile_app_list">
-                <ul class="mb0">
-                  <li><a href="#"><span class="flaticon-apple"></span> iOS App</a></li>
-                  <li><a href="#"><span class="flaticon-android"></span> Android App</a></li>
-                </ul>
+          </div>
+          <div class="col-sm-8 col-md-5 col-lg-3 col-xl-3">
+            <div class="mailchimp_widget mb30">
+              <div class="details">
+                <h4>Subscribe</h4>
+                <div class="footer_social_widget">
+                  <form class="footer_mailchimp_form home5">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Your email address"
+                        /><button type="submit">Subscribe</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
             <div class="footer_acceped_card_widget">
               <h4 class="title mb20">We accept</h4>
               <div class="acceped_card_list">
                 <ul class="d-flex mb-0">
-                  <li class="me-2"><a href="#"><img src="images/resource/visa-card.png" alt="visa-card"></a></li>
-                  <li class="me-2"><a href="#"><img src="images/resource/master-card.png" alt="master-card"></a></li>
-                  <li class="me-2"><a href="#"><img src="images/resource/apple-pay.png" alt="apple-pay"></a></li>
-                  <li class="me-2"><a href="#"><img src="images/resource/discover-card.png" alt="discover-card"></a></li>
-                  <li class="me-2"><a href="#"><img src="images/resource/paypal.png" alt="paypal"></a></li>
-                  <li><a href="#"><img src="images/resource/amex-card.png" alt="amex-card"></a></li>
+                  <li class="me-2">
+                    <a href="#"
+                      ><img
+                        src="images/resource/visa-card.png"
+                        alt="visa-card"
+                    /></a>
+                  </li>
+                  <li class="me-2">
+                    <a href="#"
+                      ><img
+                        src="images/resource/master-card.png"
+                        alt="master-card"
+                    /></a>
+                  </li>
+                  <li class="me-2">
+                    <a href="#"
+                      ><img
+                        src="images/resource/discover-card.png"
+                        alt="discover-card"
+                    /></a>
+                  </li>
+                  <li class="me-2">
+                    <a href="#"
+                      ><img src="images/resource/paypal.png" alt="paypal"
+                    /></a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -1623,31 +678,21 @@
       <div class="container bdrt1 pt20 pb20">
         <div class="row">
           <div class="col-lg-6">
-            <div class="copyright-widget text-center text-lg-start d-block d-lg-flex mb15-md">
-              <p class="me-4">© 2023 Zeomart. All Rights Reserved</p>
-              <p><a href="#">Privacy</a>  ·  <a href="#">Terms</a>  ·  <a href="#">Sitemap</a></p>
+            <div
+              class="copyright-widget text-center text-lg-start d-block d-lg-flex mb15-md"
+            >
+              <p class="me-4">© 2024 CheriX. All Rights Reserved</p>
+              <p>
+                <a href="#">Privacy</a>·<a href="#">Terms</a>·<a href="#"
+                  >xoxoxo</a
+                >
+              </p>
             </div>
           </div>
           <div class="col-lg-6">
-            <div class="footer_bottom_right_widgets text-center text-lg-end">
-              <ul class="mb0">
-                <li class="list-inline-item mb20-340">
-                  <select class="selectpicker show-tick">
-                    <option>Currency : USD</option>
-                    <option>Euro</option>
-                    <option>Pound</option>
-                  </select>
-                </li>
-                <li class="list-inline-item">
-                  <select class="selectpicker show-tick">
-                    <option>Language: English</option>
-                    <option>Frenc</option>
-                    <option>Italian</option>
-                    <option>Spanish</option>
-                    <option>Turkey</option>
-                  </select>
-                </li>
-              </ul>
+            <div
+              class="footer_bottom_right_widgets text-center text-lg-end"
+            >
             </div>
           </div>
         </div>
