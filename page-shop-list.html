@@ -58,19 +58,12 @@
             <div class="search_form_wrapper">
               <div class="row">
                 <div class="col-auto pr0">
-                  <div class="actegory">
-                    <select class="selectpicker" id="selectbox_alCategory">
-                      <option value="AllCategory">All Category</option>
-                      <option value="120PcsBaby Wiper">120Pcs Baby Wiper</option>
-                      <option value="80PcsBaby Wiper">80Pcs Baby Wiper</option>
-                      <option value="60PcsBabyWiper">60Pcs Baby Wiper</option>
-                    </select>
-                  </div>
+                  
                 </div>
                 <div class="col-auto p0">
                   <div class="top-search">
                     <form action="#" method="get" class="form-search" accept-charset="utf-8">
-                      <div class="box-search pre_line">
+                      <div class="box-search ">
                         <input class="form_control" type="text" name="search" placeholder="Search products…">
                       </div><!-- /.box-search -->
                     </form><!-- /.form-search -->
@@ -127,10 +120,10 @@
   </div>
   
   <!-- Main Header Nav -->
-  <header class="header-nav menu_style_home_one main-menu" >
+  <header class="header-nav  main-menu" >
     <!-- Ace Responsive Menu -->
     <nav class="posr"> 
-      <div class="container posr menu_bdrt1" style="opacity: 1;"> 
+      <div class="container posr menu_bdrt1"> 
         <!-- Menu Toggle btn-->
         <div class="menu-toggle">
           <button type="button" id="menu-btn">
@@ -564,8 +557,25 @@
       </div>
     </section>
 
+    <style>
+       #footer {
+        text-align: center;
+        padding-left: 2%;
+        width: 120%;
+        overflow: hidden;
+      }
+
+      @media only screen and (max-width: 790px) {
+        #footer {
+          text-align: left;
+          padding-left: 0;
+          width: fit-content;
+        }
+      }
+    </style>
+
     <!-- Our Footer -->
-    <section class="footer_one home1 pt0">
+    <section class="footer_one home1 pt0" id="footer">
       <div class="container pb60">
         <div class="row mt60">
           <div class="col-sm-6 col-md-5 col-lg-3 col-xl-3">
