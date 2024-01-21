@@ -1209,32 +1209,60 @@
 
   /* ----- Update Cart price and total ---- */
 
-  let  actualPrice = 3900;
+        let  actualPrice = 3900;
 
-  let discountPrice = 30;
+      let discountPrice = 30;
 
-  function increaseCount(){
-    const quantityInput = document.getElementById('quantity');
+      function increaseCount(){
+        const quantityInput = document.getElementById('quantity');
 
-    quantityInput.value = parseInt(quantityInput.value) + 1;
-    updateTotalPrice();
-  }
+        quantityInput.value = parseInt(quantityInput.value) + 1;
+        updateTotalPrice();
+      }
 
-  function decreaseCount(){
-    const quantityInput = document.getElementById('quantity');
+      function decreaseCount(){
+        const quantityInput = document.getElementById('quantity');
 
-    quantityInput.value = parseInt(quantityInput.value) - 1;
-    updateTotalPrice();
-    updateDiscount();
-  }
+        quantityInput.value = parseInt(quantityInput.value) - 1;
+        updateTotalPrice();
+        updateDiscount();
+      }
 
-  function updateTotalPrice() {
-    const quantity = parseInt(document.getElementById('quantity').value);
+      function updateTotalPrice() {
+        const quantity = parseInt(document.getElementById('quantity').value);
 
-    const totalPrice = (actualPrice * quantity).toFixed(2);
-    document.getElementById('subTotal').textContent = "#" + totalPrice;
+        const totalPrice = (actualPrice * quantity).toFixed(2);
+        document.getElementById('subTotal').textContent = "#" + totalPrice;
 
-    document.getElementById('total').textContent = totalPrice;
+        document.getElementById('total').textContent = totalPrice;
 
-    document.getElementById('mainTotal').textContent= "#" + (totalPrice - discountPrice);
-  }
+        document.getElementById('mainTotal').textContent= "#" + (totalPrice - discountPrice);
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        const firstPage = document.querySelector('.first-page');
+        const nextPage = document.querySelector('.next-page');
+
+        function forwardPage() {
+            firstPage.style.display = "none";
+            nextPage.style.display = "block";
+        }
+
+        document.querySelector('.btn-signup').addEventListener('click', function () {
+            forwardPage();
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const nextPage = document.querySelector('.next-page');
+        const fourthPage = document.querySelector('.fourth-page');
+
+        function forwardNextPage() {
+            nextPage.style.display = "none";
+            fourthPage.style.display = "block";
+        }
+
+        document.querySelector('.btn-signup').addEventListener('click', function () {
+            forwardNextPage();
+        });
+    });

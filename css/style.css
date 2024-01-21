@@ -4820,7 +4820,12 @@ text-align: center;
 top: -5px;
 width: 40px;
 position: absolute;
-}.login_form .login_with_social, .sign_up_form .login_with_social {
+}
+/* Next-page-Forward */
+.s {
+    display: none;
+}
+.login_form .login_with_social, .sign_up_form .login_with_social {
 position: relative;
 }.login_form .login_with_social li, .sign_up_form .login_with_social li {
 margin: 0 6px 4px 0;
