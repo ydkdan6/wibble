@@ -1206,3 +1206,35 @@
 
 
 })(window.jQuery);
+
+  /* ----- Update Cart price and total ---- */
+
+  let  actualPrice = 3900;
+
+  let discountPrice = 30;
+
+  function increaseCount(){
+    const quantityInput = document.getElementById('quantity');
+
+    quantityInput.value = parseInt(quantityInput.value) + 1;
+    updateTotalPrice();
+  }
+
+  function decreaseCount(){
+    const quantityInput = document.getElementById('quantity');
+
+    quantityInput.value = parseInt(quantityInput.value) - 1;
+    updateTotalPrice();
+    updateDiscount();
+  }
+
+  function updateTotalPrice() {
+    const quantity = parseInt(document.getElementById('quantity').value);
+
+    const totalPrice = (actualPrice * quantity).toFixed(2);
+    document.getElementById('subTotal').textContent = "#" + totalPrice;
+
+    document.getElementById('total').textContent = totalPrice;
+
+    document.getElementById('mainTotal').textContent= "#" + (totalPrice - discountPrice);
+  }

@@ -376,92 +376,97 @@
   <div class="body_content_wrapper position-relative">
 
 	<!-- Shop Checkouts Content -->
-	<section class="shop-cart pt30">
+	<section class="shop-checkouts pt30">
 		<div class="container">
       <div class="row">
         <div class="col-sm-6 col-lg-4 m-auto">
           <div class="main-title text-center mb50">
-            <h2 class="title">Shopping Cart</h2>
+            <h2 class="title">Checkout</h2>
           </div>
         </div>
       </div>
-      <div class="row mt15">
-        <div class="col-lg-8 col-xl-9">
-          <div class="shopping_cart_table table-responsive">
-            <table class="table table-borderless">
-              <thead>
-                <tr>
-                  <th scope="col">PRODUCT</th>
-                  <th scope="col">PRICE</th>
-                  <th scope="col">QUANTITY</th>
-                  <th scope="col">TOTAL</th>
-                  <th scope="col">REMOVE</th>
-                </tr>
-              </thead>
-              <tbody class="table_body">
-                <tr>
-                  <th scope="row">
-                    <ul class="cart_list d-block d-xl-flex">
-                      <li class="ps-1 ps-sm-4 pe-1 pe-sm-4 image" ><a href="#"><img src="" alt="cart1.png"></a></li>
-                      <li class="ms-2 ms-md-3">
-                        <a class="cart_title" href="#">
-                          <span class="fz16">CheriX Wipes <br class="d-none d-md-block"> 120Pcs Set</span> <br>
-                          <span class="fz14"><span class="fw500">Silk and Softness: </span> 90%</span><br>
-                          <span class="fz14"><span class="fw500">Actual Color:</span> White</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </th>
-                  <td>#<span id="actual_price">3,900</span></td>
-                  <td>
-                    <div class="cart_btn">
-                      <div class="quantity-block">
-                        <button class="quantity-arrow-minus inner_page" id="minus" onclick="decreaseCount()"> <span class="fa fa-minus"></span> </button>
-                        <input class="quantity-num inner_page" id="quantity" type="number" value="0" />
-                        <button class="quantity-arrow-plus inner_page" id="plus" onclick="increaseCount()"> <span class="fas fa-plus"></span> </button>
-                      </div>
-                    </div>
-                    <!-- <input class="cart_count text-center" placeholder="2" type="number"> -->
-                  </td>
-                  <td class="">#<span id="total">0</span></td>
-                  <td class=""><span class="flaticon-close"></span></td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="checkout_form mt30">
-              <div class="checkout_coupon posr d-block d-xl-flex">
-                <form class="form_one posr mb10-lg">
-                  <input class="form-control coupon_input" type="search" placeholder="Coupon code" aria-label="Search">
-                  <a class="btn apply_count_btn" href="#">Apply Coupon</a>
-                </form>
-                <form class="form_two">
-                  <button type="button" class="btn btn_shopping btn-white me-3">Continue Shopping</button>
-                  <button type="button" class="btn btn_cart btn3 btn-thm">Update Cart</button>
-                </form>
+			<div class="row">
+				<div class="col-lg-8 col-xl-9">
+					<div class="checkout_form style2">
+            <div class="main-title mb50">
+              <p>Returning customer? <a class="signin-filter-btn" href="#">Click here to login</a></p>
+            </div>
+				    <h4 class="title mb20">Billing details</h4>
+						<div class="checkout_coupon ui_kit_button">
+	            <form class="form2" id="coupon_form" name="contact_form" action="#" method="post">
+								<div class="row">
+	                <div class="col-sm-6">
+                    <div class="form-group">
+                      <label class="form-label">First name *</label>
+											<input class="form-control form_control" type="text" placeholder="********">
+										</div>
+	                </div>
+	                <div class="col-sm-6">
+                    <div class="form-group">
+                      <label class="form-label">Last name *</label>
+											<input class="form-control form_control" type="text" placeholder="********">
+										</div>
+	                </div>
+	                <div class="col-sm-12">
+                    <div class="form-group">
+                      <label class="form-label">Street address *</label>
+											<input class="form-control form_control mb10" type="text">
+										</div>
+	                </div>
+                </div>
+              </form>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-xl-3">
+					<div class="order_sidebar_widget checkout_page mb30 mb30">
+						<h4 class="title">Your Order</h4>
+            <ul>
+              <li><p class="product_name_qnt">The Product Being Added to cart </p><span class="price">#3,900</span></li>
+              <li class="subtitle"><p>Sub Total <span class="float-end totals" id="subTotal">0</span></p></li>
+              <li class="subtitle"><p>Total <span class="float-end totals" id="mainTotal">0</span></p></li>
+            </ul>
+          </div>
+          <div class="order_sidebar_widget checkout_page mb30 mb30">
+            <div class="payment_method">
+              <div class="ui_kit_radiobox pm_content bb1">
+                <div class="radio mb10">
+                  <input id="radio_one" name="radio" type="radio" checked="">
+                  <label class="pmtitle" for="radio_one"><span class="radio-label"></span> Direct bank transfer</label>
+                </div>
+                <div class="pm_details">
+                  <p>Make your payment directly into our bank account.</p>
+                </div>
+              </div>
+              <div class="ui_kit_radiobox pm_content bb1">
+                <div class="radio mb10">
+                  <input id="radio_one2" name="radio" type="radio">
+                  <label class="pmtitle" for="radio_one2"><span class="radio-label"></span> Pay With Card</label>
+                </div>
+              </div>
+              <div class="ui_kit_radiobox pm_content">
+                <div class="radio mb10">
+                  <input id="radio_one3" name="radio" type="radio">
+                  <label class="pmtitle" for="radio_one3"><span class="radio-label"></span> Cash on Delivery</label>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-xl-3">
-          <div class="order_sidebar_widget style2">
-            <h4 class="title">Cart Totals</h4>
-            <ul>
-              <li class="subtitle"><p>Product Subtotal <span class="float-end" id="subTotal">0</span></p></li>
-              <li class="subtitle"><p>Order Discounts <span class="float-end" id="discount">-$30.01</span></p></li>
-              <li class="subtitle"><p>Estimated Shipping <span class="float-end">Free</span></p></li>
-              <li class="subtitle"><hr></li>
-              <li class="subtitle totals"><p>Total <span class="float-end" id="mainTotal">0</span></p></li>
-            </ul>
-            <div class="ui_kit_button payment_widget_btn"><a href="page-shop-checkout.html">
-              <button type="button" class="btn btn-thm btn-block">Proceed to checkout</button></a>
-            </div>
+          <div class="ui_kit_checkbox checkout_pm">
+            <label class="custom_checkbox">Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our privacy policy.
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
           </div>
-        </div>
-      </div>
+          <div class="ui_kit_button payment_widget_btn"><a href="page-shop-order-received.html">
+            <button type="button" class="btn btn-thm btn-block mb0">Place Order</button></a>
+          </div>
+				</div>
+			</div>
 		</div>
 	</section>
 
-	<style>
+  <style>
     #footer {
      text-align: center;
      padding-left: 2%;

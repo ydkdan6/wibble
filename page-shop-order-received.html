@@ -374,86 +374,52 @@
   </div>
   
   <div class="body_content_wrapper position-relative">
-
 	<!-- Shop Checkouts Content -->
 	<section class="shop-cart pt30">
 		<div class="container">
-      <div class="row">
-        <div class="col-sm-6 col-lg-4 m-auto">
-          <div class="main-title text-center mb50">
-            <h2 class="title">Shopping Cart</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="order_complete_message text-center">
+            <div class="icon bgc-thm"><span class="fa fa-check color-white"></span></div>
+            <h2 class="title">Your Order Is Completed !</h2>
+            <p class="para">Thank you. Your order has been received.</p>
           </div>
         </div>
       </div>
-      <div class="row mt15">
-        <div class="col-lg-8 col-xl-9">
-          <div class="shopping_cart_table table-responsive">
-            <table class="table table-borderless">
-              <thead>
-                <tr>
-                  <th scope="col">PRODUCT</th>
-                  <th scope="col">PRICE</th>
-                  <th scope="col">QUANTITY</th>
-                  <th scope="col">TOTAL</th>
-                  <th scope="col">REMOVE</th>
-                </tr>
-              </thead>
-              <tbody class="table_body">
-                <tr>
-                  <th scope="row">
-                    <ul class="cart_list d-block d-xl-flex">
-                      <li class="ps-1 ps-sm-4 pe-1 pe-sm-4 image" ><a href="#"><img src="" alt="cart1.png"></a></li>
-                      <li class="ms-2 ms-md-3">
-                        <a class="cart_title" href="#">
-                          <span class="fz16">CheriX Wipes <br class="d-none d-md-block"> 120Pcs Set</span> <br>
-                          <span class="fz14"><span class="fw500">Silk and Softness: </span> 90%</span><br>
-                          <span class="fz14"><span class="fw500">Actual Color:</span> White</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </th>
-                  <td>#<span id="actual_price">3,900</span></td>
-                  <td>
-                    <div class="cart_btn">
-                      <div class="quantity-block">
-                        <button class="quantity-arrow-minus inner_page" id="minus" onclick="decreaseCount()"> <span class="fa fa-minus"></span> </button>
-                        <input class="quantity-num inner_page" id="quantity" type="number" value="0" />
-                        <button class="quantity-arrow-plus inner_page" id="plus" onclick="increaseCount()"> <span class="fas fa-plus"></span> </button>
-                      </div>
-                    </div>
-                    <!-- <input class="cart_count text-center" placeholder="2" type="number"> -->
-                  </td>
-                  <td class="">#<span id="total">0</span></td>
-                  <td class=""><span class="flaticon-close"></span></td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="checkout_form mt30">
-              <div class="checkout_coupon posr d-block d-xl-flex">
-                <form class="form_one posr mb10-lg">
-                  <input class="form-control coupon_input" type="search" placeholder="Coupon code" aria-label="Search">
-                  <a class="btn apply_count_btn" href="#">Apply Coupon</a>
-                </form>
-                <form class="form_two">
-                  <button type="button" class="btn btn_shopping btn-white me-3">Continue Shopping</button>
-                  <button type="button" class="btn btn_cart btn3 btn-thm">Update Cart</button>
-                </form>
-              </div>
+      <div class="row">
+        <div class="col-xl-8 offset-xl-2">
+          <div class="shop_order_box mt25">
+            <div class="order_list_raw text-center">
+              <ul>
+                <li class="list-inline-item">
+                  <p>Order Number</p>
+                  <h5>0</h5>
+                </li>
+                <li class="list-inline-item">
+                  <p>Date</p>
+                  <h5>27/04/2022</h5>
+                </li>
+                <li class="list-inline-item">
+                  <p>Total</p>
+                  <h5>#2984.10</h5>
+                </li>
+                <li class="list-inline-item">
+                  <p>Payment Method</p>
+                  <h5>Direct Bank Transfer</h5>
+                </li>
+              </ul>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-xl-3">
-          <div class="order_sidebar_widget style2">
-            <h4 class="title">Cart Totals</h4>
-            <ul>
-              <li class="subtitle"><p>Product Subtotal <span class="float-end" id="subTotal">0</span></p></li>
-              <li class="subtitle"><p>Order Discounts <span class="float-end" id="discount">-$30.01</span></p></li>
-              <li class="subtitle"><p>Estimated Shipping <span class="float-end">Free</span></p></li>
-              <li class="subtitle"><hr></li>
-              <li class="subtitle totals"><p>Total <span class="float-end" id="mainTotal">0</span></p></li>
-            </ul>
-            <div class="ui_kit_button payment_widget_btn"><a href="page-shop-checkout.html">
-              <button type="button" class="btn btn-thm btn-block">Proceed to checkout</button></a>
+            <div class="order_details">
+              <h4 class="title mb25">Order Details</h4>
+              <div class="od_content">
+                <ul>
+                  <li class="subtitle bb1 mb15"><p>Product <span class="float-end">Subtotal</span></p></li>
+                  <li><p class="product_name_qnt">Product Bought <span class="float-end">#3,900</span></p></li>
+                  <li class="subtitle bt1 bb1 mb10 mt15 pt10"><p>Sub Total <span class="float-end">0.</span></p></li>
+                  <li class="subtitle bb1 mb10"><p>Payment Method <span class="float-end fwn_bd_color">Direct bank transfer</span></p></li>
+                  <li class="subtitle"><p>Total <span class="float-end totals">0</span></p></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -475,10 +441,6 @@
        padding-left: 0;
        width: fit-content;
      }
-      tbody tr th ul li .image {
-      width: 0%;
-     }
-
    }
  </style>
 
@@ -601,7 +563,7 @@
          >
            <p class="me-4">© 2024 CheriX. All Rights Reserved</p>
            <p>
-             <a href="#">Privacy</a>·<a href="#">Terms</a>·<a href="#"
+             <a href="page-terms.html">Privacy</a>·<a href="#">Terms</a>·<a href="#"
                >xoxoxo</a
              >
            </p>
