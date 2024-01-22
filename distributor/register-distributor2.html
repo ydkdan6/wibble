@@ -138,16 +138,16 @@
 
   <div class="body_content_wrapper position-relative">
   	<!-- Our SigIn -->
-  	<section class="our-log-reg bgc-f5">
+  	<section class="our-log-reg bgc-f5 first-page">
   		<div class="container">
   			<div class="row">
           <div class="col-lg-6 col-xl-5 col-xxl-4 m-auto">
             <div class="log_reg_form mt70-992">
               <h2 class="title">Create your account</h2>
-              <h5>Step 2/4</h5>
+              <h5>Step 2/3</h5>
               <h6>Information marked * is required</h6>
               <div class="sign_up_form">
-                <form action="../distributor/register-distributor3.html" method="post">
+                
                   <div class="form-group">
                     <label class="form-label">Business Name*</label>
                     <input type="text" class="form-control" name="BusinessName" placeholder="Business Name" required>
@@ -163,22 +163,38 @@
                   <div class="form-group mb20">
                     <label class="form-label">Type of Business*</label><br>
                     <label class="form-label">Sole Propriertorship: </label>
-                    <input type="radio"  name="soleprop" required>
+                    <input type="radio"  name="soleprop" >
                   </div>
                   <div class="form-group mb20">
                     <label class="form-label">Partnership: </label>
-                    <input type="radio"  name="partnership" required>
+                    <input type="radio"  name="partnership" >
                   </div>
                   <div class="form-group mb20">
                     <label class="form-label">Corporation:  </label>
-                    <input type="radio"  name="Corporation" required>
+                    <input type="radio"  name="Corporation" >
                   </div>
                   <div class="form-group">
                     <label class="form-label">Tax Identification Number (TIN)*</label>
                     <input type="text" class="form-control" placeholder="**********">
                   </div>
-                  <button type="submit" class="btn btn-signup btn-thm">NEXT (2/4)</button>
-                  <p class="text-center mb25 mt10">Already have an account? <a href="page-login.html">Log In</a></p>
+                  <div class="form-group mb20">
+                    <label class="form-label">Interest in specific CheriX Baby Wipes pack sizes*</label><br>
+                    <label class="form-label">120Pcs </label>
+                    <input type="radio"  name="big" >
+                  </div>
+                  <div class="form-group mb20">
+                    <label class="form-label">80Pcs </label>
+                    <input type="radio"  name="medium">
+                  </div>
+                  <div class="form-group mb20">
+                    <label class="form-label">12Pcs  </label>
+                    <input type="radio"  name="small" >
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Legal Documents (Business registration, tax certificates)*</label>
+                    <input type="file" style="margin-bottom: 2rem;" name="legaldoc" required>
+                  </div>
+                  <button type="submit" class="btn btn-signup btn-thm" onclick="forwardPage()">NEXT (2/3)</button>
                 </form>
               </div>
             </div>
@@ -186,6 +202,76 @@
   			</div>
   		</div>
   	</section>
+
+    <style>
+      .next-page {
+        display: none;
+      }
+    </style>
+
+    <section class="our-log-reg bgc-f5 next-page">
+  		<div class="container">
+  			<div class="row">
+          <div class="col-lg-6 col-xl-5 col-xxl-4 m-auto">
+            <div class="log_reg_form mt70-992">
+              <h2 class="title">Create your account</h2>
+              <h5>Step 3/3</h5>
+              <h6>Information marked * is required</h6>
+              <div class="sign_up_form">
+                  <div class="form-group mb20">
+                    <label class="form-label">AGGREEMENT & COMPANY POLICIES*</label><br>
+                    <label class="form-label">Ackwoledgment of compliance with CheriX Policies </label>
+                    <input type="checkbox" style="margin-left: 1rem;" >
+                  </div>
+                  <div class="form-group mb20">
+                    <label class="form-label">Confirmation of Interest in product training sessions </label>
+                    <input type="checkbox" style="margin-left: 1rem;" >
+                  </div>
+                  <div class="form-group mb20">
+                    <label class="form-label">Aggreement to the terms of any distributor-specific discount tiers.  </label>
+                    <input type="checkbox" style="margin-left: 1rem;" >
+                  </div>
+                  <button type="submit" class="btn btn-signup btn-thm" onclick="forwardNextPage()">FINISH</button>
+                </form>
+              </div>
+            </div>
+          </div>
+  			</div>
+  		</div>
+  	</section>
+
+    <section class="our-log-reg bgc-f5 s fourth-page">
+  		<div class="container">
+  			<div class="row">
+          <div class="col-lg-6 col-xl-5 col-xxl-4 m-auto">
+            <div class="log_reg_form mt70-992">
+              <h2 class="title">Create your account</h2>
+              <h5>Step 4/4</h5>
+              <h6>Information marked * is required</h6>
+              <div class="sign_up_form">
+                <form action="distributor-aggreement-page.html">
+                  <div class="form-group mb20">
+                    <label class="form-label">AGGREEMENT & COMPANY POLICIES*</label><br>
+                    <label class="form-label">Ackwoledgment of compliance with CheriX Policies </label>
+                    <input type="checkbox" style="margin-left: 1rem;" req >
+                  </div>
+                  <div class="form-group mb20">
+                    <label class="form-label">Confirmation of Interest in product training sessions </label>
+                    <input type="checkbox" style="margin-left: 1rem;" required>
+                  </div>
+                  <div class="form-group mb20">
+                    <label class="form-label">Aggreement to the terms of any distributor-specific discount tiers.  </label>
+                    <input type="checkbox" style="margin-left: 1rem;" required >
+                  </div>
+                  <button type="submit" class="btn btn-signup btn-thm">FINISH</button>
+                </form>
+              </div>
+            </div>
+          </div>
+  			</div>
+  		</div>
+  	</section>
+
 
     <a class="scrollToHome" href="#"><i class="fas fa-angle-up"></i></a>
   </div>
