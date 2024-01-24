@@ -1213,6 +1213,21 @@
 
       let discountPrice = 30;
 
+      function onInputCount() {
+        const quantityInput = document.getElementById('quantity');
+
+        if (quantityInput > 0){
+            quantityInput.value = parseInt(quantityInput.value) + 1;
+            updateTotalPrice();
+        }
+        else {
+            quantityInput.value = parseInt(quantityInput.value) - 1;
+            updateTotalPrice();
+        }
+
+
+      }
+
       function increaseCount(){
         const quantityInput = document.getElementById('quantity');
 
