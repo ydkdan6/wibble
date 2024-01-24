@@ -48,6 +48,7 @@
       <div class="row justify-between items-center">
         <div class="col-sm-4 col-xl-2">
           <div class="text-center text-lg-start d-flex mb15-520">
+           
             <div class="dashboard_header_logo">
               <a href="index.html" class="logo">CheriX<span class="text-thm">.</span></a>
             </div>
@@ -73,7 +74,7 @@
                   <a class="btn dropdown-toggle" href="#" data-bs-toggle="dropdown">
                     <img src="images/profile.png" alt="Customer avatar provided by the system" style="height: 2rem;"> 
                   </a>
-                 <div class="dropdown-menu">
+                  <div class="dropdown-menu">
                     <div class="user_setting_content">
                       <a class="dropdown-item" href="page-dashboard-customer.html"><i class="flaticon-house mr10"></i>Dashboard</a>
                       <a class="dropdown-item" href="page-dashboard-product.html"><i class="flaticon-cash-on-delivery mr10"></i>Products</a>
@@ -109,33 +110,106 @@
           </div>
         </div>
       </div>
-      
       <div class="dashboard__main pl0-md">
         <div class="dashboard__content bgc-gmart-gray">
           <div class="row pb50">
             <div class="col-lg-12">
               <div class="dashboard_title_area">
-                <h2>Dashboard</h2>
-                <p class="para">Your Personalized Dashboard.</p>
+                <h2>Orders</h2>
+                <p class="para">Your Order History.</p>
               </div>
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-6 col-xxl-3">
-              <div class="d-flex justify-content-between statistics_funfact">
-                <div class="details">
-                  <div class="subtitle1">Order History</div>
-                  <div class="subtitle2"><span>5000</span> New Orders</div>
+            <div class="col-xl-12">
+              <div class="dashboard_product_list account_user_deails">
+                <div class="row d-block d-sm-flex justify-content-center justify-content-sm-between">
+                  <div class="col-sm-6 col-lg-4">
+                    <div class="dashboard_page header_search_widget mb30 mb15-520">
+                      <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search order" aria-label="Recipient's username">
+                        <div class="input-group-append">
+                          <button class="btn" type="button"><span class="fa fa-search"></span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4">
+                    <div class="dashboard_page sidebar_location_filter mb30 mb5-520">
+                      <div class="form-group">
+                        <div class="checkout_country_form">
+                          <select class="selectpicker show-tick">
+                            <option>Status</option>
+                            <option value="Delivered">Delivered</option>
+                            <option value="Cancel">Cancel</option>
+                            <option value="InProgress">In Progress</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
                 </div>
-                <div class="icon text-center mt-4"><i class="flaticon-sent"></i></div>
+                <div class="order_table table-responsive">
+                  <table class="table">
+                    <thead class="table-light">
+                      <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Name</th>
+                        <th scope="col"></th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Payment</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">#0001</th>
+                        <td>CheriX -120Pcs Baby Wiper</td>
+                        <td></td>
+                        <td class="action"><span>Jan 15, 20224</span></td>
+                        <td>Paid</td>
+                        <td class="status"><span class="style1">Delivered</span></td>
+                        <td>#4056.00</td>
+                        <td class="editing_list align-middle">
+                          <ul>
+                            <li class="list-inline-item mb-1">
+                              <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit" data-bs-original-title="View" aria-label="View"><span class="flaticon-pencil"></span></a>
+                            </li>
+                            <li class="list-inline-item mb-1">
+                              <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete" data-bs-original-title="Edit" aria-label="Edit"><span class="flaticon-delete"></span></a>
+                            </li>
+                          </ul>
+                        </td>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="mbp_pagination mt30 text-center">
+                  <ul class="page_navigation">
+                    <li class="page-item">
+                      <a class="page-link" href="#" tabindex="-1" aria-disabled="true"> <span class="fas fa-angle-left"></span></a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active" aria-current="page">
+                      <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                    <li class="page-item"><a class="page-link" href="#">20</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#"><span class="fas fa-angle-right"></span></a>
+                    </li>
+                  </ul>
+                  <p class="mt20 pagination_page_count text-center">1 – 20 of 300+ properties found</p>
+                </div>
               </div>
             </div>
           </div>
-         
-            </div>
-          </div>
         </div>
-
         <style>
           #footer {
            text-align: center;
