@@ -417,30 +417,30 @@
           <div class="col-lg-6">
             <div class="form_grid">
               <div class="wrapper">
-                <form class="contact_form" name="contact_form" action="#" method="post" novalidate>
+                <form class="contact_form" name="contact_form" action="contact-mail.php" method="post" novalidate>
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-group mb-4">
                         <label class="form-label">Name</label>
-                        <input class="form-control" type="text" placeholder="**********">
+                        <input class="form-control" name="name" type="text" placeholder="**********">
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-group mb-4">
                         <label class="form-label">Email</label>
-                        <input class="form-control email" type="email" placeholder="Your Mail">
+                        <input class="form-control email" name="email" type="email" placeholder="Your Mail">
                       </div>
                     </div>
                     <div class="col-md-12">
                       <div class="form-group mb-4">
                         <label class="form-label">Subject</label>
-                        <input class="form-control" type="text" placeholder="********">
+                        <input class="form-control" name="subject" type="text" placeholder="********">
                       </div>
                     </div>
                     <div class="col-sm-12">
                       <div class="form-group mb-4">
                         <label class="form-label">Message</label>
-                        <textarea name="form_message" class="form-control" rows="8" placeholder="Write your comments here"></textarea>
+                        <textarea name="form_message" class="form-control" name="message" rows="8" placeholder="Write your comments here"></textarea>
                       </div>
                       <div class="form-group mb0">
                         <button type="button" class="btn btn-thm">Send Message</button>

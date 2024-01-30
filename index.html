@@ -29,6 +29,11 @@
       href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&amp;family=Poppins:wght@700&amp;display=swap"
       rel="stylesheet"
     />
+    <!--Animate css library-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="css/responsive.css" />
     <title>CheriX -Best & Quality Baby Wipes</title>
     <link
@@ -43,7 +48,143 @@
         header {
           position: fixed;
         }
+
+        .gradient-bg {
+          height: 80vh;
+        }
       }
+
+      .gradient-bg {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        background-color: #3498db;
+    }
+
+    .animated-gradient {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200%;
+        height: 200%;
+        animation: animateGradient 10s linear infinite;
+    }
+
+    @keyframes animateGradient {
+        0% {
+            transform: translate(-25%, -25%);
+        }
+        100% {
+            transform: translate(25%, 25%);
+        }
+    }
+
+    .blob {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        animation-duration: 8s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+
+    .light-blue-blob {
+        background-color: #185075;
+        animation-name: moveLightBlueBlob;
+    }
+
+    .golden-blob {
+        background-color: #ffd700;
+        animation-name: moveGoldenBlob;
+    }
+
+    .black-blob {
+        background-color: #000000;
+        animation-name: moveBlackBlob;
+    }
+
+    @keyframes moveLightBlueBlob {
+        0%, 100% {
+            transform: translate(-20%, -60%);
+        }
+        50% {
+            transform: translate(20vw, 60vh);
+        }
+    }
+
+    @keyframes moveGoldenBlob {
+        0%, 100% {
+            transform: translate(-30%, -50%);
+        }
+        50% {
+            transform: translate(70vw, 30vh);
+        }
+    }
+
+    @keyframes moveBlackBlob {
+        0%, 100% {
+            transform: translate(-20%, -50%);
+        }
+        50% {
+            transform: translate(20vw, 50vh);
+        }
+    }
+
+    .blob:nth-child(2) {
+        width: 150px;
+        height: 150px;
+    }
+
+    .blob:nth-child(3) {
+        width: 120px;
+        height: 120px;
+    }
+
+    .blob:nth-child(4) {
+        width: 80px;
+        height: 80px;
+    }
+
+    .blob:nth-child(5) {
+        width: 110px;
+        height: 110px;
+    }
+
+    .blob:nth-child(6) {
+        width: 130px;
+        height: 130px;
+    }
+
+    .glass-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.3); /* Adjust opacity as needed */
+        backdrop-filter: blur(10px); /* Apply blur effect */
+        z-index: 1;
+        /* Optionally, add a subtle drop shadow */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .content {
+        position: relative;
+        z-index: 2;
+        color: white;
+        text-align: left;
+        height: 45rem;
+        padding-top: 14rem;
+        padding-left: 1rem;
+        font-size: 2em;
+        background-image: url(images/trans2.png);
+        object-fit: contain;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
     </style>
   </head>
   <body data-spy="scroll">
@@ -61,11 +202,7 @@
             <div class="posr logo1 home5_style_megamenu_btn">
               <div class="position-relative">
                 <a class="department-filter-btn btn-mega" href="#"
-                  ><img
-                    class="me-3 mt-3"
-                    src=""
-                    alt="Cherix  Icon"
-                /></a>
+                  ></a>
               </div>
             </div>
             <ul
@@ -448,100 +585,44 @@
         <section class="home-one mt-0">
           <div class="container-fluid p-0">
             <div class="row">
-              <div class="col-lg-12">
-                <div
-                  class="navi_pagi_bottom_center main-banner-wrapper home1_style"
-                >
-                  <div class="banner-style-one owl-theme owl-carousel">
-                    <div
-                      class="slide slide-one"
-                      style="
-                        background-image: url(images/image6.jpg);
-                        height: 600px;
-                      "
-                    >
-                      <div class="container">
-                        <div class="row home-content">
-                          <div class="col-lg-6 offset-lg-1 col-xl-5">
-                            <span class="tag home5_style">Silk Products</span>
-                            <h3 class="banner-title">
-                              <span class="fw400">CheriX Baby Wipes.</span>
-                            </h3>
-                            <p class="mb10">
-                              We sell Quality Wipes of all sizes.
-                            </p>
-                            <a
-                              href="#"
-                              class="btn banner-btn home5_style btn-transparent-dark"
-                              >Order Now!</a
-                            >
-                          </div>
-                        </div>
-                      </div>
+              <div class="gradient-bg">
+                <div class="animated-gradient"></div>
+                <div class="blob light-blue-blob"></div>
+                <div class="blob golden-blob"></div>
+                <div class="blob black-blob"></div>
+                <div class="blob light-blue-blob"></div>
+                <div class="blob golden-blob"></div>
+                <div class="blob black-blob"></div>
+                <div class="blob light-blue-blob"></div>
+                <div class="blob golden-blob"></div>
+                <div class="blob black-blob"></div>
+                <div class="blob light-blue-blob"></div>
+                <div class="blob golden-blob"></div>
+                <div class="blob black-blob"></div>
+                <div class="blob light-blue-blob"></div>
+                <div class="blob golden-blob"></div>
+                <div class="blob black-blob"></div>
+                <div class="glass-overlay"></div>
+                <div class="container content">
+                  <div class="row home-content">
+                    <div class="col-lg-6 offset-lg-1 col-xl-5">
+                      <span class="tag home5_style">Silk Products</span>
+                      <h3 class="banner-title">
+                        <span class="fw400 animate__animated animate__fadeInLeft" style="font-size: 36px;">CheriX Baby Wipes.</span>
+                      </h3>
+                      <p class="mb10 txt" style="font-size: 24px;">
+                        We sell Quality Wipes of all sizes.
+                      </p>
+                      <a
+                      style="border: 1px solid #000000; height: 4rem; width: 9rem;  padding-top: 1.3rem;"
+                        href="#"
+                        class="btn banner-btn home5_style btn-transparent-dark"
+                        >Order Now!</a
+                      >
                     </div>
-                    <div
-                      class="slide slide-one"
-                      style="
-                        background-image: url(images/image6.jpg);
-                        height: 600px;
-                      "
-                    >
-                      <div class="container">
-                        <div class="row home-content">
-                          <div class="col-lg-6 offset-lg-1 col-xl-5">
-                            <span class="tag home5_style">Silk Products</span>
-                            <h3 class="banner-title">
-                              <span class="fw400">CheriX Baby Wipes.</span>
-                            </h3>
-                            <p class="mb10">
-                              We sell Quality Wipes of all sizes.
-                            </p>
-                            <a
-                              href="#"
-                              class="btn banner-btn home5_style btn-transparent-dark"
-                              >Order Now!</a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="slide slide-one"
-                      style="
-                        background-image: url(images/image6.jpg);
-                        height: 600px;
-                      "
-                    >
-                      <div class="container">
-                        <div class="row home-content">
-                          <div class="col-lg-5 offset-lg-1">
-                            <span class="tag home5_style">Best Products</span>
-                            <h3 class="banner-title">
-                              <span class="fw400">CheriX Baby Wipes.</span
-                              >
-                            </h3>
-                            <p class="mb10">
-                              Out of Write Up Ideas
-                            </p>
-                            <a
-                              href="#"
-                              class="btn banner-btn home5_style btn-transparent-dark"
-                              >Order Now!</a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-btn-block banner-carousel-btn">
-                    <span class="carousel-btn left-btn"
-                      ><i class="far fa-arrow-left-long left"></i></span
-                    ><span class="carousel-btn right-btn"
-                      ><i class="far fa-arrow-right-long right"></i
-                    ></span>
                   </div>
                 </div>
-              </div>
+            </div>
             </div>
           </div>
         </section>
@@ -785,8 +866,7 @@
                               </div>
                               <div class="si_footer">
                                 <div class="price">
-                                                                    #2000.50&nbsp;<small> <del>4500</del></small>
-
+                                  #2000.50&nbsp;<small> <del>4500</del></small>
                                 </div>
                               </div>
                             </div>
@@ -2629,7 +2709,7 @@
                               </div>
                               <div class="si_footer">
                                 <div class="price">
-                                                                    #2000.50&nbsp;<small> <del>4500</del></small>
+                                  #2000.50&nbsp;<small> <del>4500</del></small>
 
                                 </div>
                               </div>
@@ -3848,6 +3928,15 @@
          text-align: left;
          padding-left: 0;
          width: fit-content;
+       }
+
+       .gradient-bg {
+        height: 80vh;
+       }
+
+       .content {
+        background-image: none;
+        padding-top: 9rem;
        }
      }
    </style>
