@@ -1281,3 +1281,38 @@
             forwardNextPage();
         });
     });
+
+    document.getElementsByClassName('myForm').addEventListener('submit', function(event) {
+        // Prevent the default form submission
+        event.preventDefault();
+    
+        // Serialize form data
+        var formData = new FormData(this);
+    
+        // Create an XMLHttpRequest object
+        var xhr = new XMLHttpRequest();
+    
+        // Configure the AJAX request
+        xhr.open('POST', '/page-about.html', true); // Replace '/submit-form' with the URL of your backend endpoint
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    
+        // Define the function to handle the server's response
+        xhr.onload = function() {
+            if (xhr.status >= 200 && xhr.status < 300) {
+                // Request was successful, handle the response here
+                console.log(xhr.responseText);
+            } else {
+                // Request failed, handle errors here
+                console.error('Request failed with status ' + xhr.status);
+            }
+        };
+    
+        // Handle network errors
+        xhr.onerror = function() {
+            console.error('Request failed');
+        };
+    
+        // Send the AJAX request with form data
+        xhr.send(new URLSearchParams(formData));
+    });
+    

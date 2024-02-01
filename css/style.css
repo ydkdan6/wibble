@@ -4,7 +4,6 @@
 /*== Typography ==*/
 /*== Header Top Style ==*/
 /* Header Top Search Field css home2 */
-/*== Menu Style For Home V1 & V2 ==*/
 /*== Mobile Menu Css ==*/
 /*== Home Css ==*/
 /* ==== Home 2 Main Sliders === */
@@ -25,10 +24,7 @@
 /*== Invoice Page ==*/
 /*== LogIn Register Page ==*/
 /*== Create a custom checkbox ==*/
-/*== Question Widget Faq Page ==*/
 /*== Terms & Condition Page ==*/
-/*== Tab Widget UI Page ==*/
-/*== Table Widget UI Page ==*/
 /*== Message Box Widget UI Page ==*/
 /*== Form Input Widget UI Page ==*/
 /*== Form Textarea Widget UI Page ==*/
@@ -51,11 +47,8 @@
 /*== Fonts Size, Font Weights, Height, Display & Position ==*/
 /*== Custome Margin Padding ==*/
 /*== BackGround Images ==*/
-/*== Parallax Css ==*/
-/*== Divider Css ==*/
-/*== Chart Js Css ==*/
 /*== Shop Order Page Style ==*/
-/*== Shop Chaeckout Page Style ==*/
+/*== Shop Checkout Page Style ==*/
 /*== Shop Single Page Style ==*/
 
 /*== Typography ==*/
@@ -285,9 +278,9 @@ color: #f5c34b !important;
 }.hvr-text-thm:hover {
 color: #f5c34b !important;
 }.text-thm1 {
-color: #443297 !important;
+color: #3498db !important;
 }.text-thm1-light {
-color: #6668b2;
+color: #3498db;
 }.text-thm2 {
 color: #41544a !important;
 }.text-thm3 {
@@ -309,7 +302,7 @@ background-color: #f3f5f6;
 }.bgc-thm {
 background-color: #f5c34b !important;
 }.bgc-thm1 {
-background-color: #443297 !important;
+background-color: #3498db !important;
 }.bgc-white {
 background-color: #ffffff !important;
 }.bgc-f5 {
@@ -451,9 +444,9 @@ background-color: #3873df;
 }.btn-thm1:hover, .btn-thm1:active, .btn-thm1:focus {
 color: #ffffff;
 }.btn-thm2:before {
-background-color: #3a298d;
+background-color: #3498db;
 }.btn-thm2-light:before {
-background-color: #443297;
+background-color: #3498db;
 }.btn-blue:before {
 background-color: #064ad0;
 }.btn-blue {
@@ -1925,7 +1918,7 @@ right: -6px;
 }.advscrh_frm_btn .search-btn {
 background-color: #f5c34b;
 border-radius: 0 4px 4px 0;
-color: #443297;
+color: #3498db;
 height: 50px;
 line-height: 45px;
 text-align: center;
@@ -2025,7 +2018,7 @@ z-index: 0;
 }.iconbox.home7_style .icon, .iconbox.home9_style .icon {
 border-radius: 6px;
 }.iconbox.home9_style .icon:before {
-background-color: #443297;
+background-color: #3498db;
 border-radius: 6px;
 content: "";
 height: 100%;
@@ -2142,7 +2135,7 @@ padding: 30px 0;
 }.light_white, .light_white:hover {
 color: rgba(255, 255, 255, 0.5);
 }.header_top.home10_style, .header_middle.home10_style {
-background-color: #6668b2;
+background-color: #3498db;
 }.header_top.home10_style {
 border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
@@ -2193,7 +2186,7 @@ display: flex;
 margin-top: 20px;
 position: relative;
 }.menu_style_home_one {
-background-color: #443297;
+background-color: #3498db;
 }.menu_style_home_one.home2_style {
 background-color: #152945;
 }.menu_style_home_one.home5_style {
@@ -2850,7 +2843,7 @@ line-height: 30px;
 letter-spacing: 0em;
 padding-left: 20px;
 }.left_sidebar_department_widgets ul li .child_list:hover {
-color: #443297;
+color: #3498db;
 }.shop_by_brand {
 position: relative;
 }.shop_by_brand ul li a, .shop_by_brand.style2 ul li a, .shop_by_brand.style2 a {
@@ -2881,7 +2874,7 @@ width: auto;
 background-color: #112137;
 color: #ffffff;
 }.shop_by_brand ul li a:hover {
-background-color: #443297;
+background-color: #3498db;
 color: #ffffff;
 }
 /* Icon Box Css Code  */
