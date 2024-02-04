@@ -1316,3 +1316,50 @@
         xhr.send(new URLSearchParams(formData));
     });
     
+    //LocalStorage 
+    // Function to save scroll position
+function saveScrollPosition() {
+    var scrollPosition = {
+        x: window.pageXOffset || document.documentElement.scrollLeft,
+        y: window.pageYOffset || document.documentElement.scrollTop
+    };
+    localStorage.setItem('scrollPosition', JSON.stringify(scrollPosition)); // Save scroll position to localStorage
+}
+
+// Function to restore scroll position
+function restoreScrollPosition() {
+    var scrollPosition = JSON.parse(localStorage.getItem('scrollPosition')); // Get scroll position from localStorage
+    if (scrollPosition) {
+        window.scrollTo(scrollPosition.x, scrollPosition.y); // Restore scroll position
+    }
+}
+
+// Event listener for when the page is about to be unloaded
+window.addEventListener('beforeunload', saveScrollPosition);
+
+// Restore scroll position when the page is loaded
+window.addEventListener('load', restoreScrollPosition);
+
+//Pop-Up Script
+document.addEventListener('DOMContentLoaded', function() {
+    var popup = document.getElementById('popup');
+    var closePopupButton = document.getElementById('closePopup');
+
+    // Check if the popup has already been shown
+    var popupShown = localStorage.getItem('popupShown');
+    if (!popupShown) {
+        // If the popup hasn't been shown, display it
+        popup.style.display = 'block';
+
+        // Set flag in localStorage to indicate that the popup has been shown
+        localStorage.setItem('popupShown', true);
+    }
+
+    // Function to close the popup
+    closePopupButton.addEventListener('click', function() {
+        popup.style.display = 'none';
+    });
+});
+
+
+    

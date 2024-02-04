@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link   rel="stylesheet" href="css/style-2.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&amp;family=Poppins:wght@700&amp;display=swap"
       rel="stylesheet"
@@ -606,6 +607,40 @@
                 <div class="container content">
                   <div class="row home-content">
                     <div class="col-lg-6 offset-lg-1 col-xl-5">
+                      <!--Pop-up Item-->
+   <div class="popup" id="popup">
+    <div class="popup-content">
+        <span class="close" id="closePopup">&times;</span>
+        <h2>Hello 👋</h2>
+        <h3>Welcome To CheriX Baby Wipes</h4>
+        <p>Your No.1 Baby wipes shopping site. New to our services <br>
+        Kindly <a href="page-register.html" style="color: goldenrod;">Sign Up</a></p>
+    </div>
+</div>
+
+<script>
+  //Pop-Up Script
+document.addEventListener('DOMContentLoaded', function() {
+  var popup = document.getElementById('popup');
+  var closePopupButton = document.getElementById('closePopup');
+
+  // Check if the popup has already been shown
+  var popupShown = localStorage.getItem('popupShown');
+  if (!popupShown) {
+      // If the popup hasn't been shown, display it
+      popup.style.display = 'block';
+
+      // Set flag in localStorage to indicate that the popup has been shown
+      localStorage.setItem('popupShown', true);
+  }
+
+  // Function to close the popup
+  closePopupButton.addEventListener('click', function() {
+      popup.style.display = 'none';
+  });
+});
+</script>
+
                       <span class="tag home5_style">Silk Products</span>
                       <h3 class="banner-title">
                         <span class="fw400 animate__animated animate__fadeInLeft" style="font-size: 36px;">CheriX Baby Wipes.</span>
