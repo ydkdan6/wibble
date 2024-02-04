@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link rel="stylesheet" href="../css/style-2.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&amp;family=Poppins:wght@700&amp;display=swap"
       rel="stylesheet"
@@ -144,64 +145,99 @@
           <div class="col-lg-6 col-xl-5 col-xxl-4 m-auto">
             <div class="log_reg_form mt70-992">
               <h2 class="title">Create your account</h2>
-              <h5>Step 2/3</h5>
+              <h5>Step 3/5</h5>
               <h6>Information marked * is required</h6>
               <div class="sign_up_form">
-                
-                  <div class="form-group">
-                    <label class="form-label">Business Name*</label>
-                    <input type="text" class="form-control" name="BusinessName" placeholder="Business Name" required>
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label">Business Address* </label>
-                    <input type="text" class="form-control" name="BusinessAdd" placeholder="Business Address" required>
-                  </div>
-                  <div class="form-group mb20">
-                    <label class="form-label">Business Registration Number*</label>
-                    <input type="text" class="form-control" name="BusinessNum" placeholder="0123*******" required>
-                  </div>
-                  <div class="form-group mb20">
-                    <label class="form-label">Type of Business*</label><br>
-                    <label class="form-label">Sole Propriertorship: </label>
-                    <input type="radio"  name="soleprop" >
-                  </div>
-                  <div class="form-group mb20">
-                    <label class="form-label">Partnership: </label>
-                    <input type="radio"  name="partnership" >
-                  </div>
-                  <div class="form-group mb20">
-                    <label class="form-label">Limited Liability Company:  </label>
-                    <input type="radio"  name="Corporation" >
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label">Tax Identification Number (TIN)*</label>
-                    <input type="text" class="form-control" placeholder="**********">
-                  </div>
-                  <div class="form-group mb20">
-                    <label class="form-label">Interest in specific CheriX Baby Wipes pack sizes*</label><br>
-                    <label class="form-label">120Pcs/pack </label>
-                    <input type="radio"  name="big" >
-                  </div>
-                  <div class="form-group mb20">
-                    <label class="form-label">80Pcs/pack </label>
-                    <input type="radio"  name="medium">
-                  </div>
-                  <div class="form-group mb20">
-                    <label class="form-label">96Pcs/bag<br>(12Pcs/pack 8Pcs/bag)</label>
-                    <input type="radio"  name="small" >
-                  </div>
-                  <div class="form-group mb20">
-                    <label class="form-label">All </label>
-                    <input type="radio"  name="small" >
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label">Legal Documents (Business registration, tax certificates)*</label>
-                    <input type="file" style="margin-bottom: 2rem;" name="legaldoc" required>
-                  </div>
-                  <div class="form-group mb20">
-                    <label class="form-label"><input type="checkbox"  name="small" > &nbsp;I, hereby agree to the terms and services  </label>
-                  </div>
-                  <button type="submit" class="btn btn-signup btn-thm" onclick="forwardPage()">NEXT (2/3)</button>
+                <!--Pop-up Item-->
+                <style>
+                  .popup {
+                    display: block;
+                  }
+                </style>
+               <!--Pop-up Item-->
+<style>
+  .popup {
+      display: none;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 9999;
+  }
+
+  .popup-content {
+      background-color: white;
+      width: 80%;
+      max-width: 600px;
+      margin: 100px auto;
+      padding: 20px;
+      border-radius: 5px;
+      position: relative;
+  }
+
+  .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+  }
+</style>
+<div class="form-group">
+  <label class="form-label">Business Name*</label>
+  <input type="text" class="form-control" name="BusinessName" placeholder="Business Name" required>
+</div>
+<div class="form-group">
+  <label class="form-label">Business Address* </label>
+  <input type="text" class="form-control" name="BusinessAdd" placeholder="Business Address" required>
+</div>
+<div class="form-group mb20">
+  <label class="form-label">Business Registration Number*</label>
+  <input type="text" class="form-control" name="BusinessNum" placeholder="0123*******" required>
+</div>
+<div class="form-group mb20">
+  <label class="form-label">Type of Business*</label><br>
+  <label class="form-label">Sole Proprietorship: </label>
+  <input type="radio" name="soleprop">
+</div>
+<div class="form-group mb20">
+  <label class="form-label">Partnership: </label>
+  <input type="radio" name="partnership">
+</div>
+<div class="form-group mb20">
+  <label class="form-label">Limited Liability Company: </label>
+  <input type="radio" name="Corporation">
+</div>
+<div class="form-group">
+  <label class="form-label">Tax Identification Number (TIN)*</label>
+  <input type="text" class="form-control" placeholder="**********">
+</div>
+<div class="form-group mb20">
+  <label class="form-label">Interest in specific CheriX Baby Wipes pack sizes*</label><br>
+  <label class="form-label">120Pcs/pack </label>
+  <input type="radio" name="big">
+</div>
+<div class="form-group mb20">
+  <label class="form-label">80Pcs/pack </label>
+  <input type="radio" name="medium">
+</div>
+<div class="form-group mb20">
+  <label class="form-label">96Pcs/bag<br>(12Pcs/pack 8Pcs/bag)</label>
+  <input type="radio" name="small">
+</div>
+<div class="form-group mb20">
+  <label class="form-label">All </label>
+  <input type="radio" name="small">
+</div>
+<div class="form-group">
+  <label class="form-label">Legal Documents (Business registration, tax certificates)*</label>
+  <input type="file" style="margin-bottom: 2rem;" name="legaldoc" required>
+</div>
+<div class="form-group mb20">
+  <input type="checkbox" onchange="togglePopup()" name="small"> &nbsp;I hereby agree to the terms and services
+</div>
+<button type="submit" class="btn btn-signup btn-thm" onclick="forwardPage()">NEXT (3/5)</button>
                 </form>
               </div>
             </div>
@@ -222,7 +258,7 @@
           <div class="col-lg-6 col-xl-5 col-xxl-4 m-auto">
             <div class="log_reg_form mt70-992">
               <h2 class="title">Create your account</h2>
-              <h5>Step 3/3</h5>
+              <h5>Step 4/5</h5>
               <h6>Information marked * is required</h6>
               <div class="sign_up_form">
                   <div class="form-group mb20">
@@ -238,7 +274,7 @@
                     <label class="form-label">Aggreement to the terms of any distributor-specific discount tiers.  </label>
                     <input type="checkbox" style="margin-left: 1rem;" >
                   </div>
-                  <button type="submit" class="btn btn-signup btn-thm" onclick="forwardNextPage()">FINISH</button>
+                  <button type="submit" class="btn btn-signup btn-thm" onclick="forwardNextPage()">NEXT (4/5)</button>
                 </form>
               </div>
             </div>
@@ -253,7 +289,7 @@
           <div class="col-lg-6 col-xl-5 col-xxl-4 m-auto">
             <div class="log_reg_form mt70-992">
               <h2 class="title">Create your account</h2>
-              <h5>Step 4/4</h5>
+              <h5>Step 5/5</h5>
               <h6>Information marked * is required</h6>
               <div class="sign_up_form">
                 <form action="distributor-aggreement-page.html">

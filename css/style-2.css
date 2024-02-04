@@ -47,6 +47,29 @@
     cursor: pointer;
 }
 
+.signature {
+    border: 2px solid black;
+    height: 5rem;
+    width: 12rem;
+    border-right: transparent;
+    border-left: transparent;
+    border-top: transparent;
+    margin-bottom: 2px;
+}
+
+.popup .popup-content small {
+    position: absolute;
+    top: 190px;
+    color: black;
+    left: 90px;
+}
+
+.popup .popup-content #clearButton {
+    background-color: goldenrod;
+    height: 2rem;
+    border: transparent;
+    border-radius: 5px;
+}
 
 @media only screen and (max-width: 790px){
    .popup {
@@ -59,4 +82,11 @@
    .popup-content {
     width: 90%;
    }
+
+   .popup .popup-content small {
+    position: absolute;
+    top: 210px;
+    color: #888;
+    left: 20px;
+}
 }
